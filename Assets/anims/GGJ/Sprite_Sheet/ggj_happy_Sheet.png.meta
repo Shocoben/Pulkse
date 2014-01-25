@@ -1,0 +1,261 @@
+fileFormatVersion: 2
+guid: 89f7cc3d0a8543246b4d22e97a9b4696
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ggj_happy_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1107
+        width: 362
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_happy_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 1080
+        width: 372
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_happy_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 1061
+        width: 379
+        height: 473
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_happy_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 1057
+        width: 377
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_happy_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 1062
+        width: 293
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_happy_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2097
+        y: 1064
+        width: 298
+        height: 454
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_happy_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 2452
+        y: 1064
+        width: 304
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_happy_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 1068
+        width: 312
+        height: 421
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_happy_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 3173
+        y: 1076
+        width: 323
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_happy_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 3541
+        y: 1074
+        width: 308
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_happy_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 3895
+        y: 1076
+        width: 300
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_happy_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 581
+        width: 351
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_happy_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 597
+        width: 352
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_happy_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 611
+        width: 365
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_happy_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 613
+        width: 379
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_happy_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 613
+        width: 388
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_happy_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2166
+        y: 613
+        width: 358
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_happy_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2564
+        y: 613
+        width: 365
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_happy_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 2973
+        y: 613
+        width: 375
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_happy_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 3386
+        y: 611
+        width: 371
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_happy_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 3823
+        y: 611
+        width: 363
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_happy_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 126
+        width: 362
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_happy_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 124
+        width: 362
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_happy_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 124
+        width: 362
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
