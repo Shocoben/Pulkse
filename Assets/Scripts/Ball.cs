@@ -19,6 +19,8 @@ public class Ball : LookAtObj {
 	private List<EmotionBall> _emotions = new List<EmotionBall>();
 	private List<EmotionBall.Emotions> _emotionsZone = new List<EmotionBall.Emotions>();
 
+	private EmotionBall.Emotions cEmo;
+
 	public List<EmotionBall.Emotions> emotionsZone
 	{
 		get
@@ -27,19 +29,23 @@ public class Ball : LookAtObj {
 		}
 	}
 
-	public float lastTempo = 0;
-	public float tempo = 1;
 	public void addEmotion(EmotionBall emo)
 	{
-		if (_emotions.Count <= 0)
-			lastTempo = Time.time;
 		_emotions.Add(emo);
-
 	}
 
 	public void addZone(EmotionBall.Emotions emo)
 	{
+		if (emo != cEmo)
+		{
+			changeEmotion(emo);
+		}
 		_emotionsZone.Add(emo);
+	}
+
+	public void changeEmotion(EmotionBall.Emotions emo)
+	{
+		cEmo = emo;
 	}
 
 	public void removeZone(EmotionBall.Emotions emo)
@@ -110,7 +116,7 @@ public class Ball : LookAtObj {
     {   
         #if UNITY_STANDALONE || UNITY_WEBPLAYER || UNITY_EDITOR
             mouseInputs();
-        #else 
+        #else
             touchInputs();
         #endif
 
