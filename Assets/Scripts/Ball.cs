@@ -27,7 +27,9 @@ public class Ball : LookAtObj {
 	public BallEmosInfos[] infos;
 
 	private List<EmotionBall> _emotions = new List<EmotionBall>();
+	private Dictionary<EmotionBall.Emotions, List<EmotionBall>> _ballsByEmotion = new Dictionary<EmotionBall.Emotions, List<EmotionBall>>();
 	private List<EmotionBall.Emotions> _emotionsZone = new List<EmotionBall.Emotions>();
+
 	private Dictionary<EmotionBall.Emotions, BallEmosInfos> _emotionsInfos = new Dictionary<EmotionBall.Emotions, BallEmosInfos>();
 
 	private EmotionBall.Emotions cEmo;
@@ -42,9 +44,16 @@ public class Ball : LookAtObj {
 		}
 	}
 
+	public List<EmotionBall> getBallsOfEmotion( EmotionBall.Emotions emo)
+	{
+		return _ballsByEmotion[emo];
+	}
+	
+
 	public void addEmotion(EmotionBall emo)
 	{
 		_emotions.Add(emo);
+		_ballsByEmotion[emo.emotion].Add(emo);
 	}
 
 	public void addZone(EmotionBall.Emotions emo)
@@ -61,7 +70,6 @@ public class Ball : LookAtObj {
 		_emotionsInfos[cEmo].goAnim.SetActive(false);
 		cEmo = emo;
 		lastChangeEmo = Time.time;
-		Debug.Log("nEmo " + cEmo);
 		_emotionsInfos[cEmo].goAnim.SetActive(true);
 	}
 
@@ -76,6 +84,7 @@ public class Ball : LookAtObj {
 	public void removeEmotion(EmotionBall emo)
 	{
 		_emotions.Remove(emo);
+		_ballsByEmotion[emo.emotion].Remove(emo);
 	}
 
     public static List<Ball> instances
@@ -96,8 +105,8 @@ public class Ball : LookAtObj {
 
 		for (int i = 0; i < infos.Length; ++i)
 		{
-			Debug.Log(infos[i].emotion.ToString());
 			_emotionsInfos.Add(infos[i].emotion, infos[i]);
+			_ballsByEmotion.Add(infos[i].emotion, new List<EmotionBall>());
 		}
 
     }
