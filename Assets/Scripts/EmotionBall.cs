@@ -21,7 +21,7 @@ public class EmotionBall : LookAtObj
 	}
 
 	private static List<EmotionBall> queueToPlay = new List<EmotionBall>();
-	private static EmotionInfos tempoToFollow;
+	private static bool followingTempo = false;
 
 
 	public Emotions emotion;
@@ -34,6 +34,14 @@ public class EmotionBall : LookAtObj
 
 	private bool _isPlaying = false;
 
+	public float pulseSpeed = 0.2f;
+	private float _scale = 1;
+	public Vector3 basicScale;
+	private Vector3 targetScale;
+
+	private bool _stopPlaying = false;
+	private float _stopPlayingTempo = 0;
+
 	public virtual void Start()
 	{
 		EmotionSoundConfig.Instance.ballByEmotions[emotion].Add(this);
@@ -41,7 +49,10 @@ public class EmotionBall : LookAtObj
 		EmotionInfos infos = EmotionSoundConfig.Instance.emoDictionary[emotion];
 		audioClip = infos.clip;
 		_tempoDuration = (infos.forceTempo <= 0)?audioClip.length : infos.forceTempo;
+		_stopPlayingTempo = infos.stopTempo;
 
+		basicScale = transform.parent.localScale;
+		targetScale = basicScale;
 	}
 	
 	// Update is called once per frame
@@ -50,7 +61,7 @@ public class EmotionBall : LookAtObj
 		base.Update ();
 		doFollowBall();
 		
-		if (_isStartTempo)
+		if (_isStartTempo && _isPlaying)
 		{
 			if (_lastTempoPlay + _tempoDuration <= Time.time)
 			{	
@@ -67,8 +78,17 @@ public class EmotionBall : LookAtObj
 		}
 		else if (_isPlaying && (_lastTempoPlay + _tempoDuration) <= Time.time)
 		{
-			callOnEmotionTempo(emotion);
+			//callOnEmotionTempo(emotion);
+			OnEmotionTempo();
 			_lastTempoPlay = Time.time;
+		}
+
+
+		if (_stopPlaying && (_lastTempoPlay + _stopPlayingTempo) <= Time.time)
+		{
+			audioSource.Stop();
+			_stopPlaying = false;
+			transform.parent.gameObject.SetActive(false);
 		}
 
 	
@@ -89,14 +109,21 @@ public class EmotionBall : LookAtObj
 		{
 			if (!followBall.emotionsZone.Contains(emotion))
 			{
-				
+				diminutionScale();
 			}
 		}
 	}
 
 	public virtual void diminutionScale()
 	{
-
+		_scale -= pulseSpeed;
+		_scale = Mathf.Max(0, Mathf.Min(_scale, 1));
+		targetScale = basicScale * _scale;
+		transform.parent.localScale = targetScale;
+		if (_scale <= 0)
+		{
+			removeAudioLoop();
+		}
 	}
 
 	public virtual void doFollowBall()
@@ -116,12 +143,11 @@ public class EmotionBall : LookAtObj
 			followBall = other.GetComponent<Ball>();
 			followBall.addEmotion(this);
 
-			if (tempoToFollow == null)
+			if (!followingTempo)
 			{
-
 				playAudioLoop(emotion);
 				_isStartTempo = true;
-				tempoToFollow = EmotionSoundConfig.Instance.emoDictionary[emotion];
+				followingTempo = true;
 			}
 			else
 			{
@@ -139,6 +165,15 @@ public class EmotionBall : LookAtObj
 		_lastTempoPlay = Time.time;
 		_isPlaying = true;
 	}
+
+	public void removeAudioLoop()
+	{
+		_isPlaying = false;
+		audioSource.loop = false;
+		_stopPlaying = true;
+	}
+	
+
 
 	public void OnTriggerExit(Collider other)
 	{

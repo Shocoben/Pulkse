@@ -8,7 +8,8 @@ public class EmotionInfos
 	public EmotionBall.Emotions emotionName;
 	public AudioClip clip;
 	public float forceTempo = -1;
-	
+	public float stopTempo = 0.5f;
+
 	private bool _isPlaying = false;
 	
 	public bool isPlaying()
