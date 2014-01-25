@@ -17,6 +17,15 @@ public class Ball : LookAtObj {
     private Vector2 _direction;
 
 	private List<EmotionBall> _emotions = new List<EmotionBall>();
+	private List<EmotionBall.Emotions> _emotionsZone = new List<EmotionBall.Emotions>();
+
+	public List<EmotionBall.Emotions> emotionsZone
+	{
+		get
+		{
+			return _emotionsZone;
+		}
+	}
 
 	public float lastTempo = 0;
 	public float tempo = 1;
@@ -25,6 +34,15 @@ public class Ball : LookAtObj {
 		if (_emotions.Count <= 0)
 			lastTempo = Time.time;
 		_emotions.Add(emo);
+
+	}
+
+	public void addZone(EmotionBall.Emotions emo)
+	{
+		if (_emotionsZone.Contains(emo))
+		{
+			_emotionsZone.Add(emo);
+		}
 
 	}
 

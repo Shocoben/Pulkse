@@ -3,25 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-[System.Serializable]
-public class EmotionInfos
-{
-	public EmotionBall.Emotions emotionName;
-	public AudioClip clip;
-	public float forceTempo = -1;
-	
-	private bool _isPlaying = false;
 
-	public bool isPlaying()
-	{
-		return _isPlaying;
-	}
-
-	public void setPlaying(bool nBool)
-	{
-		_isPlaying = nBool;
-	}
-}
 
 public class EmotionBall : LookAtObj 
 {
@@ -32,12 +14,12 @@ public class EmotionBall : LookAtObj
 	public enum Emotions {
 		red
 		,green
+		,bleu
+		,yellow
+		,orange
+		,violet
 	}
 
-	public EmotionInfos[] emotionsInfos;
-	private static Dictionary<Emotions, EmotionInfos> _emoDictionary = new Dictionary<Emotions, EmotionInfos>();
-	private static Dictionary<Emotions, List<EmotionBall>> _ballByEmotions = new Dictionary<Emotions, List<EmotionBall>>();
-	private static bool _initializedEmotionsTempo = false;
 	private static List<EmotionBall> queueToPlay = new List<EmotionBall>();
 	private static EmotionInfos tempoToFollow;
 
@@ -54,25 +36,14 @@ public class EmotionBall : LookAtObj
 
 	public virtual void Start()
 	{
-		if (!_initializedEmotionsTempo)
-		{
-			_initializedEmotionsTempo = true;
-			for (int i = 0; i < emotionsInfos.Length; ++i)
-			{
-				Emotions emo = emotionsInfos[i].emotionName;
-				if( !_emoDictionary.ContainsKey(emo) )
-				{
-					_emoDictionary.Add(emo, emotionsInfos[i]);
-					_ballByEmotions.Add(emo, new List<EmotionBall>());
-				}
-			}
-		}
+		EmotionSoundConfig.Instance.ballByEmotions[emotion].Add(this);
 
-		audioClip = _emoDictionary[emotion].clip;
+		EmotionInfos infos = EmotionSoundConfig.Instance.emoDictionary[emotion];
+		audioClip = infos.clip;
+		_tempoDuration = (infos.forceTempo <= 0)?audioClip.length : infos.forceTempo;
+
 	}
-
-
-
+	
 	// Update is called once per frame
 	public override void Update ()
 	{
@@ -86,31 +57,44 @@ public class EmotionBall : LookAtObj
 				for (int i = 0; i < queueToPlay.Count; ++i)
 				{
 					Emotions cEmotion = queueToPlay[i].emotion;
-					if ( !_emoDictionary[cEmotion].isPlaying() )
-					{
-						queueToPlay[i].playAudioLoop(cEmotion);
-					}
+
+					queueToPlay[i].playAudioLoop(cEmotion);
+
 				}
 				_lastTempoPlay = Time.time;
 				callOnEmotionTempo(emotion);
 			}
 		}
-		else if (_isPlaying && (_lastTempoPlay + _emoDictionary[emotion].clip.length) <= Time.time)
+		else if (_isPlaying && (_lastTempoPlay + _tempoDuration) <= Time.time)
 		{
 			callOnEmotionTempo(emotion);
 			_lastTempoPlay = Time.time;
 		}
+
+	
 	}
 
 	public void callOnEmotionTempo(Emotions emotion)
 	{
-		for (int i = 0; i < _ballByEmotions[emotion].Count; ++i)
+		List<EmotionBall> ballByEmotions = EmotionSoundConfig.Instance.ballByEmotions[emotion];
+		for (int i = 0; i < ballByEmotions.Count; ++i)
 		{
-			_ballByEmotions[emotion][i].OnEmotionTempo();
+			ballByEmotions[i].OnEmotionTempo();
 		}
 	}
 
 	public virtual void OnEmotionTempo()
+	{
+		if (followBall != null)
+		{
+			if (!followBall.emotionsZone.Contains(emotion))
+			{
+				
+			}
+		}
+	}
+
+	public virtual void diminutionScale()
 	{
 
 	}
@@ -134,18 +118,14 @@ public class EmotionBall : LookAtObj
 
 			if (tempoToFollow == null)
 			{
-				EmotionInfos infos = _emoDictionary[emotion];
-				_tempoDuration = (infos.forceTempo <= 0)?infos.clip.length : _emoDictionary[emotion].forceTempo;
+
 				playAudioLoop(emotion);
 				_isStartTempo = true;
-				tempoToFollow = _emoDictionary[emotion];
+				tempoToFollow = EmotionSoundConfig.Instance.emoDictionary[emotion];
 			}
 			else
 			{
-				if (!_emoDictionary[emotion].isPlaying())
-				{
-					queueToPlay.Add(this);
-				}
+				queueToPlay.Add(this);
 			}
 		}
 	}
@@ -155,7 +135,7 @@ public class EmotionBall : LookAtObj
 		audioSource.clip = audioClip;
 		audioSource.loop = true;
 		audioSource.Play();
-		_emoDictionary[emotion].setPlaying(true);
+		EmotionSoundConfig.Instance.emoDictionary[emotion].setPlaying(true);
 		_lastTempoPlay = Time.time;
 		_isPlaying = true;
 	}
