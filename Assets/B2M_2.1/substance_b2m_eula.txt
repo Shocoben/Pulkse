@@ -1,0 +1,58 @@
+Custom License 
+
+License Agreement Allegorithmic SAS End User License Agreement (EULA) for Bitmap2Material 
+
+IMPORTANT -- READ CAREFULLY: 
+
+This Allegorithmic SAS End User License Agreement ("License Agreement") is a legal agreement between you (either an individual or an entity) and Allegorithmic SAS, a company under French law with residence in Clermont-Ferrand, France. By installing, copying or otherwise using Bitmap2Material, you agree to be bound by the terms of this License Agreement. If you do not agree to the terms of this License Agreement, do not install/use Bitmap2Material.
+
+1. General 
+
+This is a license agreement and NOT an agreement for sale. Under this contract Allegorithmic SAS grants to you a non-exclusive license to use Bitmap2Material, which is content, software and documentation. 
+
+Bitmap2Material itself as well as the copy of Bitmap2Material or any other copy you are authorized to make under this contract remain the property of Allegorithmic SAS at all times. 
+
+2. Use of Bitmap2Material 
+
+a. Allegorithmic SAS grants you a nonexclusive, nontransferable license to use Bitmap2Material and its manual and other accompanying printed material and online or electronic documentation with equipment owned by you or under your control, according to the terms and conditions of this Agreement. This Agreement permits a single user to install and use Bitmap2Material on only two computers at any one time. 
+
+b. If Bitmap2Material is identified as a demonstration, evaluation, or NFR version, you may use it only for the purpose of commercial evaluation and demonstration. Such licenses are generated for a specific fixed time period. After a NFR license has been expired, all related documentation and data must be destroyed or sent back to Allegorithmic SAS or the reseller who handled the NFR version. 
+
+You may not use it for commercial, professional, or for-profit purposes. 
+
+3. Transfer 
+
+a. You may not rent, lease, sublicense or lend Bitmap2Material or Documentation. You may, however, transfer all your rights to use Bitmap2Material to another person or legal entity provided that you transfer this agreement, Bitmap2Material, including all copies, updates or prior versions. You must inform Allegorithmic SAS in writing about a license transfer and the new user has to sign and accept this license agreement. 
+
+b. In case of such a transfer the license of the former user expires and all remaining data covered by this license must be deleted/destroyed 
+
+4. You May Not: 
+
+a. Copy or use Bitmap2Material or Documentation except as permitted by this Agreement. 
+
+b. Reverse engineer, decompile, or disassemble Bitmap2Material. 
+
+c. Install or use Bitmap2Material on the Internet or over a wide area network, including, without limitation, use in connection with a Web based render farm or similar service. 
+
+d. Remove, alter, or obscure any proprietary notices, labels, or marks from Bitmap2Material or documentation. 
+
+e. Utilize any equipment, device, software, or other means designed to circumvent or remove any form of copy protection used by Allegorithmic SAS in connection with Bitmap2Material, or use Bitmap2Material together with any authorization code, serial number, or other copy protection device not supplied by Allegorithmic SAS directly or through an authorized reseller. 
+
+5. Limited warranty 
+
+BITMAP2MATERIAL IS A TOOL INTENDED TO BE USED BY TRAINED PROFESSIONALS ONLY. ALLEGORITHMIC SAS WARRANTS THAT BITMAP2MATERIAL WILL PERFORM IN ACCORDANCE WITH THE DOCUMENTATION. ALLEGORITHMIC SAS CAN NOT WARRANT THAT BITMAP2MATERIAL WILL WORK TOGETHER WITH OTHER SOFTWARE AND PLUG-INS FROM OTHER 3RD PARTY DEVELOPERS, BECAUSE OF THE COMPLEXITY OF SUCH INTERACTIONS BETWEEN DIFFERENT OPERATING SYSTEMS OR SOFTWARE PACKAGES. THE USER MAY HOWEVER IMMEDIATELY REPORT SUCH INCOMPATIBILITIES FOR FURTHER INSPECTION BY ALLEGORITHMIC SAS SUCH A REPORT HAS TO BE DONE IN WRITING. 
+
+6. Warranty Disclaimer 
+
+THE INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. ALLEGORITHMIC SAS DISCLAIMS ALL WARRANTIES, EITHER EXPRESSED OR IMPLIED, INCLUDING THE WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. IN NO EVENT SHALL ALLEGORITHMIC SAS, ITS SUPPLIERS, TURBO SQUID, INC., OR AUTODESK MEDIA & ENTERTAINMENT, A DIVISION OF AUTODESK BE LIABLE FOR ANY DAMAGES WHATSOEVER INCLUDING DIRECT, INDIRECT, INCIDENTAL, CONSEQUENTIAL, LOSS OF BUSINESS PROFITS OR SPECIAL DAMAGES, EVEN IF SITNI ALLEGORITHMIC SAS, ITS SUPPLIERS, TURBO SQUID, INC., OR AUTODESK MEDIA & ENTERTAINMENT, A DIVISION OF AUTODESK HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. SOME STATES DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES SO THE FOREGOING LIMITATION MAY NOT APPLY. 
+
+7. Confidentially 
+
+All Licensing information, including license files, descriptions of code activation and written instructions of any kind created by Allegorithmic SAS are only intended for the licensed user of Bitmap2Material and no one else. Such information may not be spread or distributed in any form to other users. 
+
+8. Other 
+
+If any provision of this Agreement is found to be invalid or otherwise unenforceable, the further conditions of this Agreement will remain fully effective and the parties will be bound by obligations which approximate, as closely as possible, the effect of the provision found invalid or unenforceable, without being themselves invalid or unenforceable. 
+
+BY INSTALLING AND AUTHORIZING THIS SOFTWARE, YOU HEREBY AGREE TO THE TERMS AND CONDITIONS PRESENTED ABOVE. 
+

@@ -1,0 +1,162 @@
+fileFormatVersion: 2
+guid: 14f94e30a144489458207ad4d6c642e2
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ggj_sad_Sheet_3_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2
+        width: 354
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_sad_Sheet_3_1
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 2
+        width: 357
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_sad_Sheet_3_2
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 1
+        width: 357
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_sad_Sheet_3_3
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 1
+        width: 354
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_sad_Sheet_3_4
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 1
+        width: 357
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_sad_Sheet_3_5
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 1
+        width: 354
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_sad_Sheet_3_6
+      rect:
+        serializedVersion: 2
+        x: 2630
+        y: 0
+        width: 353
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_sad_Sheet_3_7
+      rect:
+        serializedVersion: 2
+        x: 3102
+        y: 0
+        width: 357
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_sad_Sheet_3_8
+      rect:
+        serializedVersion: 2
+        x: 3558
+        y: 0
+        width: 357
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_sad_Sheet_3_9
+      rect:
+        serializedVersion: 2
+        x: 4014
+        y: 0
+        width: 357
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_sad_Sheet_3_10
+      rect:
+        serializedVersion: 2
+        x: 4442
+        y: 0
+        width: 357
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_sad_Sheet_3_11
+      rect:
+        serializedVersion: 2
+        x: 4909
+        y: 0
+        width: 354
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_sad_Sheet_3_12
+      rect:
+        serializedVersion: 2
+        x: 5374
+        y: 0
+        width: 355
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 

@@ -1,0 +1,117 @@
+fileFormatVersion: 2
+guid: e43ffae33a3ecd74c9403ba4ec934ad0
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ggj_sad_Sheet_6_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 371
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_sad_Sheet_6_1
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 4
+        width: 373
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_sad_Sheet_6_2
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 11
+        width: 374
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_sad_Sheet_6_3
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 11
+        width: 376
+        height: 436
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_sad_Sheet_6_4
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 13
+        width: 378
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_sad_Sheet_6_5
+      rect:
+        serializedVersion: 2
+        x: 2195
+        y: 15
+        width: 381
+        height: 438
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_sad_Sheet_6_6
+      rect:
+        serializedVersion: 2
+        x: 2643
+        y: 16
+        width: 383
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_sad_Sheet_6_7
+      rect:
+        serializedVersion: 2
+        x: 3108
+        y: 16
+        width: 382
+        height: 437
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
