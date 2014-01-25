@@ -2,6 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 
+[System.Serializable]
+public class BallEmosInfos
+{
+	public EmotionBall.Emotions emotion;
+	public GameObject goAnim;
+}
+
 public class Ball : LookAtObj {
 
     private static List<Ball> _instances = new List<Ball>();
@@ -16,10 +23,16 @@ public class Ball : LookAtObj {
 
     private Vector2 _direction;
 
+
+	public BallEmosInfos[] infos;
+
 	private List<EmotionBall> _emotions = new List<EmotionBall>();
 	private List<EmotionBall.Emotions> _emotionsZone = new List<EmotionBall.Emotions>();
+	private Dictionary<EmotionBall.Emotions, BallEmosInfos> _emotionsInfos = new Dictionary<EmotionBall.Emotions, BallEmosInfos>();
 
 	private EmotionBall.Emotions cEmo;
+	private float lastChangeEmo = -1000;
+	
 
 	public List<EmotionBall.Emotions> emotionsZone
 	{
@@ -45,7 +58,11 @@ public class Ball : LookAtObj {
 
 	public void changeEmotion(EmotionBall.Emotions emo)
 	{
+		_emotionsInfos[cEmo].goAnim.SetActive(false);
 		cEmo = emo;
+		lastChangeEmo = Time.time;
+		Debug.Log("nEmo " + cEmo);
+		_emotionsInfos[cEmo].goAnim.SetActive(true);
 	}
 
 	public void removeZone(EmotionBall.Emotions emo)
@@ -75,6 +92,14 @@ public class Ball : LookAtObj {
 		base.Start();
         _direction = startDirection;
         _instances.Add(this);
+		cEmo = EmotionBall.Emotions.white;
+
+		for (int i = 0; i < infos.Length; ++i)
+		{
+			Debug.Log(infos[i].emotion.ToString());
+			_emotionsInfos.Add(infos[i].emotion, infos[i]);
+		}
+
     }
 
     public void OnDestroy()
@@ -110,7 +135,7 @@ public class Ball : LookAtObj {
     }
 
 
-
+	public float returnToWhiteTime = 1;
 	// Update is called once per frame
 	override public void Update () 
     {   
@@ -121,10 +146,14 @@ public class Ball : LookAtObj {
         #endif
 
         transform.Translate(transform.right * speed * Time.deltaTime, Space.World);
+
+		if (_emotionsZone.Count <= 0 && lastChangeEmo + returnToWhiteTime <= Time.time)
+		{
+			changeEmotion(EmotionBall.Emotions.white);
+		}
 	}
 	
 
-    public float timeSlow = 0.5f;
     void touchInputs()
     {
         if (Input.touchCount > 0)
