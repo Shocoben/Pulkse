@@ -46,12 +46,18 @@ public class PoolManager : MonoBehaviour {
           
                 if ( pO == null )
                 {
-                    Debug.LogError( "Prefab " + categoryName + " has no PoolableObject component" );
-                    break;
+					pO = iGO.GetComponentInChildren<PoolableObject>();
+					if (pO == null)
+					{
+	                    Debug.LogError( "Prefab " + categoryName + " has no PoolableObject component" );
+	                    break;
+					}
                 }
-                pO.gameObject.SetActive(false);
+
+				pO.Setup();
+				pO.toActiveAndDesactive.SetActive(false);
                 pO.poolCategoryName = categoryName;
-                pO.transform.parent = objectsParent.transform;
+                iGO.transform.parent = objectsParent.transform;
                 pool[categoryName].Add(pO);
             }
         }

@@ -10,8 +10,8 @@ GameObject:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: SoundConfigurator
-  m_TagString: Untagged
+  m_Name: Spawn
+  m_TagString: SpawnPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23,7 +23,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.88898802, y: -.736457109, z: 0}
+  m_LocalPosition: {x: -1.88720393, y: -3.31180692, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -35,38 +35,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cb01c3bbe378884986a1c12a2a2c86f, type: 3}
+  m_Script: {fileID: 11500000, guid: 263b33a3d604ca942840cee2cb1f7c12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyOnLoadLevel: 1
-  emotionsInfos:
-  - emotionName: 0
-    clip: {fileID: 8300000, guid: 95d8d7975b18cc44bb194b6e9319bd5d, type: 3}
-    forceTempo: 0
-    stopTempo: .5
-  - emotionName: 1
-    clip: {fileID: 8300000, guid: d7415a54dbcc0754e85d9c2340b192ed, type: 3}
-    forceTempo: 0
-    stopTempo: .5
-  - emotionName: 2
-    clip: {fileID: 8300000, guid: 292f2374dcaf26349acad86f5f5ecf83, type: 3}
-    forceTempo: 0
-    stopTempo: .5
-  - emotionName: 3
-    clip: {fileID: 8300000, guid: d7415a54dbcc0754e85d9c2340b192ed, type: 3}
-    forceTempo: 0
-    stopTempo: .5
-  - emotionName: 4
-    clip: {fileID: 8300000, guid: 6ba6995931033c348ad9d60647764ff4, type: 3}
-    forceTempo: 0
-    stopTempo: .5
-  - emotionName: 5
-    clip: {fileID: 8300000, guid: f1a7125703e23a14cba28a5c2723b111, type: 3}
-    forceTempo: 0
-    stopTempo: .5
-  generalTempo: 1
-  generalAudioClipTempo: {fileID: 0}
-  spawnPointsTag: SpawnPoint
+  poolName: GreenEmo
+  emotion: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

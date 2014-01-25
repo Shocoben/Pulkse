@@ -6,22 +6,6 @@ public class EmotionBallBis : EmotionBall {
 
 	private Transform rotateAroundBall;
 	public float rotateSpeed = 5;
-
-	public void rotateAround( Vector3 O )
-	{
-		/*
-          * A'.x = A.x * cos(θ) - A.y * sin(θ)
-          * A'.y = A.x * sin(θ) + A.y * cos(θ)
-         */
-		float rotateSpeedBis = Time.deltaTime * rotateSpeed;
-		Vector3 A = transform.parent.position;
-		Vector2 AmO = new Vector2(A.x - O.x, A.y - O.y);
-		Vector2 rotAmO = new Vector2(AmO.x * Mathf.Cos(rotateSpeedBis) - AmO.y * Mathf.Sin(rotateSpeedBis), AmO.x * Mathf.Sin(rotateSpeedBis) + AmO.y * Mathf.Cos(rotateSpeedBis));
-		Vector2 OR = new Vector2(rotAmO.x + O.x, rotAmO.y + O.y);
-		transform.parent.position = new Vector3(OR.x, OR.y, transform.parent.position.z);
-	}
-
-
 	
 	public float radiusRotate = 3;
 	private float angle = 0;
