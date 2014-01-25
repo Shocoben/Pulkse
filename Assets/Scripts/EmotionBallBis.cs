@@ -4,7 +4,7 @@ using System.Collections;
 public class EmotionBallBis : EmotionBall {
 
 
-	public Transform rotateAroundBall;
+	private Transform rotateAroundBall;
 	public float rotateSpeed = 5;
 
 	public void rotateAround( Vector3 O )
@@ -28,7 +28,7 @@ public class EmotionBallBis : EmotionBall {
 	// Update is called once per frame
 	float timeSinceRotate = 0;
 	public float diffSpeed = 5;
-	public override void Update ()
+	public override void doFollowBall ()
 	{
 		if (rotateAroundBall != null)
 		{

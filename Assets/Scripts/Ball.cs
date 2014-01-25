@@ -92,21 +92,8 @@ public class Ball : LookAtObj {
         #endif
 
         transform.Translate(transform.right * speed * Time.deltaTime, Space.World);
-		if (lastTempo + tempo <= Time.time)
-		{
-			playTempo();
-			lastTempo = Time.time;
-		}
 	}
-
-	public void playTempo()
-	{
-		Debug.Log("playTempo " + _emotions.Count);
-		for (int i = 0; i < _emotions.Count; ++i)
-		{
-			_emotions[i].play();
-		}
-	}
+	
 
     public float timeSlow = 0.5f;
     void touchInputs()
