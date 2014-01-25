@@ -39,11 +39,15 @@ public class Ball : LookAtObj {
 
 	public void addZone(EmotionBall.Emotions emo)
 	{
+		_emotionsZone.Add(emo);
+	}
+
+	public void removeZone(EmotionBall.Emotions emo)
+	{
 		if (_emotionsZone.Contains(emo))
 		{
-			_emotionsZone.Add(emo);
+			_emotionsZone.Remove(emo);
 		}
-
 	}
 
 	public void removeEmotion(EmotionBall emo)
@@ -60,8 +64,9 @@ public class Ball : LookAtObj {
     }
 
     // Use this for initialization
-    void Start()
+    public override void Start()
     {
+		base.Start();
         _direction = startDirection;
         _instances.Add(this);
     }

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LookAtObj : MonoBehaviour {
+public class LookAtObj : PoolableObject {
 	public float reactivity = 0.1f;
 	// Update is called once per frame
 	public virtual void Update () {
