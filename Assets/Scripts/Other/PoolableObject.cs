@@ -7,6 +7,11 @@ public class PoolableObject : MonoBehaviour {
 	
 	public virtual void Start()
 	{
+
+	}
+
+	public virtual void Setup()
+	{
 		if (toActiveAndDesactive == null)
 		{
 			toActiveAndDesactive = this.gameObject;
@@ -21,6 +26,7 @@ public class PoolableObject : MonoBehaviour {
 
     public virtual void Alive()
     {
+
         PoolManager.instance.removeFromPool(poolCategoryName, this);
 		toActiveAndDesactive.SetActive( true );
     }

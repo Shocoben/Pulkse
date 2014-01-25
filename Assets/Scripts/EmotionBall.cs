@@ -39,6 +39,8 @@ public class EmotionBall : LookAtObj
 	private float _personalTempoDuration;
 
 	private bool _launchedPlay = false;
+	public Renderer graph;
+
 	public bool launchedPlay()
 	{
 		return _launchedPlay;
@@ -47,23 +49,31 @@ public class EmotionBall : LookAtObj
 	{
 		return _isPlaying;
 	}
-
-	public override void Start()
+	
+	public override void Setup ()
 	{
-		base.Start();
 		basicScale = transform.parent.localScale;
 	}
 
 	public override void Alive ()
 	{
+		base.Alive();
 		EmotionInfos infos = EmotionSoundConfig.Instance.emoDictionary[emotion];
 		audioClip = infos.clip;
 		_stopPlayingTempo = infos.stopTempo;
 		_personalTempoDuration = (infos.forceTempo > 0)? infos.forceTempo : infos.clip.length;
-		transform.localScale = basicScale;
+
+		transform.parent.localScale = basicScale;
 		targetScale = basicScale;
+		setupForEmotion();
 	}
-	
+
+	public void setupForEmotion()
+	{
+		EmotionInfos infos = EmotionSoundConfig.Instance.emoDictionary[emotion];
+		graph.material = infos.material;
+	}
+
 	// Update is called once per frame
 	public override void Update ()
 	{

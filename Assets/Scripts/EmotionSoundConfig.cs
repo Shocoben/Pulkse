@@ -9,6 +9,7 @@ public class EmotionInfos
 	public AudioClip clip;
 	public float forceTempo = -1;
 	public float stopTempo = 0.5f;
+	public Material material;
 
 	private bool _isPlaying = false;
 	
@@ -68,8 +69,9 @@ public class EmotionSoundConfig : Singleton<EmotionSoundConfig> {
 
 		for (int i = 0; i < spawnsGOs.Length; ++i)
 		{
-			spawnPoints.Add( spawnsGOs[i].GetComponent<EmotionSpawn>() );
-
+			EmotionSpawn spawn = spawnsGOs[i].GetComponent<EmotionSpawn>();
+			spawnPoints.Add( spawn );
+			spawn.Spawn();
 		}
 
 

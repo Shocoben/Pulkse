@@ -53,7 +53,9 @@ public class PoolManager : MonoBehaviour {
 	                    break;
 					}
                 }
-                iGO.gameObject.SetActive(false);
+
+				pO.Setup();
+				pO.toActiveAndDesactive.SetActive(false);
                 pO.poolCategoryName = categoryName;
                 iGO.transform.parent = objectsParent.transform;
                 pool[categoryName].Add(pO);

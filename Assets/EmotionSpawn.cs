@@ -4,11 +4,15 @@ using System.Collections;
 public class EmotionSpawn : MonoBehaviour {
 
 	public string poolName;
+	public EmotionBall.Emotions emotion;
 
-	public void Spawn(Vector3 position)
+	public void Spawn()
 	{
 		PoolableObject pGO = PoolManager.instance.getPoolableObject(poolName, false);
-		pGO.transform.position = position;
+		pGO.toActiveAndDesactive.transform.position = transform.position;
+		pGO.GetComponent<EmotionBall>().emotion = emotion;
 		pGO.Alive();
+
+
 	}
 }
