@@ -1653,7 +1653,7 @@ MonoBehaviour:
   poolableCategories:
   - name: GreenEmo
     prefab: {fileID: 100000, guid: 0566e32a2da8b2f4d827ea9232a5f6eb, type: 2}
-    nbrInstance: 25
+    nbrInstance: 100
   objectsParent: {fileID: 80829510}
 --- !u!4 &458970756
 Transform:
