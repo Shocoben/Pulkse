@@ -588,7 +588,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -.0233192444
+      value: -.227783203
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1041,6 +1041,7 @@ GameObject:
   - 114: {fileID: 374878772}
   - 135: {fileID: 374878771}
   - 54: {fileID: 374878770}
+  - 95: {fileID: 374878775}
   m_Layer: 10
   m_Name: Zone_Rouge_3
   m_TagString: Untagged
@@ -1073,7 +1074,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &374878772
 MonoBehaviour:
@@ -1117,11 +1118,25 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 374878769}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -38.1099052, y: 34.5647697, z: 0}
-  m_LocalScale: {x: 1.70000005, y: 1.70000005, z: .440783709}
+  m_LocalPosition: {x: -36.2061691, y: 36.4684868, z: 0}
+  m_LocalScale: {x: 3.5, y: 3.5, z: .440783709}
   m_Children:
   - {fileID: 105836297}
   m_Father: {fileID: 0}
+--- !u!95 &374878775
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 374878769}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0e2ebd65eebdc14a8129a41cd6eaaca, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1001 &377830183
 Prefab:
   m_ObjectHideFlags: 0
@@ -1243,6 +1258,7 @@ GameObject:
   - 114: {fileID: 445568885}
   - 135: {fileID: 445568884}
   - 54: {fileID: 445568883}
+  - 95: {fileID: 445568888}
   m_Layer: 10
   m_Name: Zone_Rouge_6
   m_TagString: Untagged
@@ -1275,7 +1291,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &445568885
 MonoBehaviour:
@@ -1320,10 +1336,24 @@ Transform:
   m_GameObject: {fileID: 445568882}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 48.0831261, y: 17.2207947, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: .440783709}
+  m_LocalScale: {x: 3, y: 3, z: .440783709}
   m_Children:
   - {fileID: 437934920}
   m_Father: {fileID: 0}
+--- !u!95 &445568888
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 445568882}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0e2ebd65eebdc14a8129a41cd6eaaca, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1 &458970754
 GameObject:
   m_ObjectHideFlags: 0
@@ -1379,6 +1409,7 @@ GameObject:
   - 114: {fileID: 462942488}
   - 135: {fileID: 462942487}
   - 54: {fileID: 462942486}
+  - 95: {fileID: 462942491}
   m_Layer: 10
   m_Name: Zone_Bleu_6
   m_TagString: Untagged
@@ -1411,7 +1442,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &462942488
 MonoBehaviour:
@@ -1456,10 +1487,24 @@ Transform:
   m_GameObject: {fileID: 462942485}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 15.5579796, y: -51.3466873, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: .440783709}
+  m_LocalScale: {x: 2, y: 2, z: .440783709}
   m_Children:
   - {fileID: 2140497041}
   m_Father: {fileID: 0}
+--- !u!95 &462942491
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 462942485}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0e2ebd65eebdc14a8129a41cd6eaaca, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1001 &486565896
 Prefab:
   m_ObjectHideFlags: 0
@@ -2213,6 +2258,7 @@ GameObject:
   - 114: {fileID: 736064736}
   - 135: {fileID: 736064735}
   - 54: {fileID: 736064734}
+  - 95: {fileID: 736064739}
   m_Layer: 10
   m_Name: Zone_Bleu_2
   m_TagString: Untagged
@@ -2245,7 +2291,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &736064736
 MonoBehaviour:
@@ -2290,10 +2336,24 @@ Transform:
   m_GameObject: {fileID: 736064733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -53.1090431, y: 17.814621, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: .440783709}
+  m_LocalScale: {x: 2, y: 2, z: .440783709}
   m_Children:
   - {fileID: 2020292547}
   m_Father: {fileID: 0}
+--- !u!95 &736064739
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 736064733}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0e2ebd65eebdc14a8129a41cd6eaaca, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1001 &747569150
 Prefab:
   m_ObjectHideFlags: 0
@@ -2485,10 +2545,8 @@ MonoBehaviour:
   infos:
   - emotion: 0
     nbrNeeded: 10
-  - emotion: 1
-    nbrNeeded: 2
-  nextLevelID: 0
-  nextLevelName: 
+  nextLevelID: 2
+  nextLevelName: LD_Lvl2
 --- !u!54 &777825864
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2541,6 +2599,7 @@ GameObject:
   - 114: {fileID: 790551998}
   - 135: {fileID: 790551997}
   - 54: {fileID: 790551996}
+  - 95: {fileID: 790552001}
   m_Layer: 10
   m_Name: Zone_Jaune_1
   m_TagString: Untagged
@@ -2573,7 +2632,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &790551998
 MonoBehaviour:
@@ -2622,6 +2681,20 @@ Transform:
   m_Children:
   - {fileID: 1189471629}
   m_Father: {fileID: 0}
+--- !u!95 &790552001
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 790551995}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0e2ebd65eebdc14a8129a41cd6eaaca, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1 &794633769
 GameObject:
   m_ObjectHideFlags: 0
@@ -2851,6 +2924,7 @@ GameObject:
   - 114: {fileID: 842339331}
   - 135: {fileID: 842339330}
   - 54: {fileID: 842339329}
+  - 95: {fileID: 842339334}
   m_Layer: 10
   m_Name: Zone_Rouge_9
   m_TagString: Untagged
@@ -2883,7 +2957,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &842339331
 MonoBehaviour:
@@ -2928,10 +3002,24 @@ Transform:
   m_GameObject: {fileID: 842339328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.40285301, y: -50.7976494, z: 0}
-  m_LocalScale: {x: 1.20000005, y: 1.20000005, z: .440783709}
+  m_LocalScale: {x: 2, y: 2, z: .440783709}
   m_Children:
   - {fileID: 1546672707}
   m_Father: {fileID: 0}
+--- !u!95 &842339334
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 842339328}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0e2ebd65eebdc14a8129a41cd6eaaca, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1001 &845642083
 Prefab:
   m_ObjectHideFlags: 0
@@ -2939,6 +3027,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11400000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
+      propertyPath: infos.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
       propertyPath: m_LocalPosition.x
       value: -50.9378929
@@ -2994,6 +3086,94 @@ Prefab:
     - target: {fileID: 21200000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
+      propertyPath: nextLevelID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
+      propertyPath: nextLevelName
+      value: LD_Lvl2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
+      propertyPath: infos.Array.data[2].emotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
+      propertyPath: infos.Array.data[2].nbrNeeded
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
+      propertyPath: infos.Array.data[3].emotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
+      propertyPath: infos.Array.data[3].nbrNeeded
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
+      propertyPath: infos.Array.data[4].emotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
+      propertyPath: infos.Array.data[4].nbrNeeded
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
+      propertyPath: infos.Array.data[5].emotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
+      propertyPath: infos.Array.data[5].nbrNeeded
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
+      propertyPath: infos.Array.data[6].emotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
+      propertyPath: infos.Array.data[6].nbrNeeded
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
+      propertyPath: infos.Array.data[7].emotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
+      propertyPath: infos.Array.data[7].nbrNeeded
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
+      propertyPath: infos.Array.data[8].emotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
+      propertyPath: infos.Array.data[8].nbrNeeded
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
+      propertyPath: infos.Array.data[9].emotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
+      propertyPath: infos.Array.data[9].nbrNeeded
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
+      propertyPath: infos.Array.data[10].emotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
+      propertyPath: infos.Array.data[10].nbrNeeded
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
+      propertyPath: infos.Array.data[11].emotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
+      propertyPath: infos.Array.data[11].nbrNeeded
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: acf66917e41f0ce49b85b2a5b067c9b1, type: 2}
@@ -3053,6 +3233,7 @@ GameObject:
   - 114: {fileID: 846751275}
   - 135: {fileID: 846751274}
   - 54: {fileID: 846751273}
+  - 95: {fileID: 846751278}
   m_Layer: 10
   m_Name: Zone_Jaune_4
   m_TagString: Untagged
@@ -3085,7 +3266,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &846751275
 MonoBehaviour:
@@ -3130,10 +3311,24 @@ Transform:
   m_GameObject: {fileID: 846751272}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 23.8740501, y: 17.8654671, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: .440783709}
+  m_LocalScale: {x: 2, y: 2, z: .440783709}
   m_Children:
   - {fileID: 612868863}
   m_Father: {fileID: 0}
+--- !u!95 &846751278
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 846751272}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0e2ebd65eebdc14a8129a41cd6eaaca, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1 &877147822
 GameObject:
   m_ObjectHideFlags: 0
@@ -3403,6 +3598,7 @@ GameObject:
   - 114: {fileID: 913042838}
   - 135: {fileID: 913042837}
   - 54: {fileID: 913042836}
+  - 95: {fileID: 913042841}
   m_Layer: 10
   m_Name: Zone_Bleu_3
   m_TagString: Untagged
@@ -3435,7 +3631,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &913042838
 MonoBehaviour:
@@ -3484,6 +3680,20 @@ Transform:
   m_Children:
   - {fileID: 1264796227}
   m_Father: {fileID: 0}
+--- !u!95 &913042841
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 913042835}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0e2ebd65eebdc14a8129a41cd6eaaca, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1001 &979549339
 Prefab:
   m_ObjectHideFlags: 0
@@ -3673,6 +3883,7 @@ GameObject:
   - 114: {fileID: 1031550862}
   - 135: {fileID: 1031550861}
   - 54: {fileID: 1031550860}
+  - 95: {fileID: 1031550865}
   m_Layer: 10
   m_Name: Zone_Bleu_4
   m_TagString: Untagged
@@ -3705,7 +3916,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1031550862
 MonoBehaviour:
@@ -3754,6 +3965,20 @@ Transform:
   m_Children:
   - {fileID: 596729798}
   m_Father: {fileID: 0}
+--- !u!95 &1031550865
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1031550859}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0e2ebd65eebdc14a8129a41cd6eaaca, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1 &1042931997
 GameObject:
   m_ObjectHideFlags: 0
@@ -4149,6 +4374,7 @@ GameObject:
   - 114: {fileID: 1113686896}
   - 135: {fileID: 1113686895}
   - 54: {fileID: 1113686894}
+  - 95: {fileID: 1113686899}
   m_Layer: 10
   m_Name: Zone_Rouge_5
   m_TagString: Untagged
@@ -4181,7 +4407,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1113686896
 MonoBehaviour:
@@ -4226,10 +4452,24 @@ Transform:
   m_GameObject: {fileID: 1113686893}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 23.9138222, y: 40.5864983, z: 0}
-  m_LocalScale: {x: 1.70000005, y: 1.70000005, z: .440783709}
+  m_LocalScale: {x: 3, y: 3, z: .440783709}
   m_Children:
   - {fileID: 890250740}
   m_Father: {fileID: 0}
+--- !u!95 &1113686899
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1113686893}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0e2ebd65eebdc14a8129a41cd6eaaca, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1 &1119683801
 GameObject:
   m_ObjectHideFlags: 0
@@ -4242,6 +4482,7 @@ GameObject:
   - 114: {fileID: 1119683804}
   - 135: {fileID: 1119683803}
   - 54: {fileID: 1119683802}
+  - 95: {fileID: 1119683807}
   m_Layer: 10
   m_Name: Zone_Jaune_5
   m_TagString: Untagged
@@ -4274,7 +4515,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1119683804
 MonoBehaviour:
@@ -4323,6 +4564,20 @@ Transform:
   m_Children:
   - {fileID: 1001922329}
   m_Father: {fileID: 0}
+--- !u!95 &1119683807
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1119683801}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0e2ebd65eebdc14a8129a41cd6eaaca, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1 &1129424180
 GameObject:
   m_ObjectHideFlags: 0
@@ -4376,6 +4631,7 @@ GameObject:
   - 114: {fileID: 1134058230}
   - 135: {fileID: 1134058229}
   - 54: {fileID: 1134058228}
+  - 95: {fileID: 1134058233}
   m_Layer: 10
   m_Name: Zone_Rouge_10
   m_TagString: Untagged
@@ -4408,7 +4664,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1134058230
 MonoBehaviour:
@@ -4453,10 +4709,24 @@ Transform:
   m_GameObject: {fileID: 1134058227}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -28.7553272, y: -45.60149, z: 0}
-  m_LocalScale: {x: 1.20000005, y: 1.20000005, z: .440783709}
+  m_LocalScale: {x: 2, y: 2, z: .440783709}
   m_Children:
   - {fileID: 911532625}
   m_Father: {fileID: 0}
+--- !u!95 &1134058233
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1134058227}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0e2ebd65eebdc14a8129a41cd6eaaca, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1001 &1134887979
 Prefab:
   m_ObjectHideFlags: 0
@@ -5035,6 +5305,7 @@ GameObject:
   - 114: {fileID: 1282108363}
   - 135: {fileID: 1282108362}
   - 54: {fileID: 1282108361}
+  - 95: {fileID: 1282108366}
   m_Layer: 10
   m_Name: Zone_Rouge_2
   m_TagString: Untagged
@@ -5067,7 +5338,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1282108363
 MonoBehaviour:
@@ -5112,10 +5383,24 @@ Transform:
   m_GameObject: {fileID: 1282108360}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -35.2742653, y: 7.19073582, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: .440783709}
+  m_LocalScale: {x: 4, y: 4, z: .440783709}
   m_Children:
   - {fileID: 1956990311}
   m_Father: {fileID: 0}
+--- !u!95 &1282108366
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1282108360}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0e2ebd65eebdc14a8129a41cd6eaaca, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1 &1293764521
 GameObject:
   m_ObjectHideFlags: 0
@@ -5792,6 +6077,7 @@ GameObject:
   - 114: {fileID: 1421495398}
   - 135: {fileID: 1421495397}
   - 54: {fileID: 1421495396}
+  - 95: {fileID: 1421495401}
   m_Layer: 10
   m_Name: Zone_Rouge_End
   m_TagString: Untagged
@@ -5824,7 +6110,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1421495398
 MonoBehaviour:
@@ -5869,9 +6155,23 @@ Transform:
   m_GameObject: {fileID: 1421495395}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -50.6165581, y: -32.429493, z: 0}
-  m_LocalScale: {x: 1.20000005, y: 1.20000005, z: .440783709}
+  m_LocalScale: {x: 2, y: 2, z: .440783709}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!95 &1421495401
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1421495395}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0e2ebd65eebdc14a8129a41cd6eaaca, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1 &1426307149
 GameObject:
   m_ObjectHideFlags: 0
@@ -6071,6 +6371,7 @@ GameObject:
   - 114: {fileID: 1519805363}
   - 135: {fileID: 1519805362}
   - 54: {fileID: 1519805361}
+  - 95: {fileID: 1519805366}
   m_Layer: 10
   m_Name: Zone_Bleu_1
   m_TagString: Untagged
@@ -6103,7 +6404,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1519805363
 MonoBehaviour:
@@ -6148,10 +6449,24 @@ Transform:
   m_GameObject: {fileID: 1519805360}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -24.3260117, y: -17.2045727, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: .440783709}
+  m_LocalScale: {x: 2, y: 2, z: .440783709}
   m_Children:
   - {fileID: 520547379}
   m_Father: {fileID: 0}
+--- !u!95 &1519805366
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1519805360}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0e2ebd65eebdc14a8129a41cd6eaaca, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1 &1521432792
 GameObject:
   m_ObjectHideFlags: 0
@@ -6287,6 +6602,7 @@ GameObject:
   - 114: {fileID: 1620859951}
   - 135: {fileID: 1620859950}
   - 54: {fileID: 1620859949}
+  - 95: {fileID: 1620859954}
   m_Layer: 10
   m_Name: Zone_Rouge_8
   m_TagString: Untagged
@@ -6319,7 +6635,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1620859951
 MonoBehaviour:
@@ -6364,10 +6680,24 @@ Transform:
   m_GameObject: {fileID: 1620859948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 31.0883884, y: -42.0284691, z: 0}
-  m_LocalScale: {x: 1.20000005, y: 1.20000005, z: .440783709}
+  m_LocalScale: {x: 2.5, y: 2.5, z: .440783709}
   m_Children:
   - {fileID: 794633770}
   m_Father: {fileID: 0}
+--- !u!95 &1620859954
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1620859948}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0e2ebd65eebdc14a8129a41cd6eaaca, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1001 &1626274165
 Prefab:
   m_ObjectHideFlags: 0
@@ -6657,6 +6987,7 @@ GameObject:
   - 114: {fileID: 1754993249}
   - 135: {fileID: 1754993248}
   - 54: {fileID: 1754993247}
+  - 95: {fileID: 1754993252}
   m_Layer: 10
   m_Name: Zone_Bleu_5
   m_TagString: Untagged
@@ -6689,7 +7020,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1754993249
 MonoBehaviour:
@@ -6734,10 +7065,24 @@ Transform:
   m_GameObject: {fileID: 1754993246}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 34.5905151, y: -2.40650749, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: .440783709}
+  m_LocalScale: {x: 2, y: 2, z: .440783709}
   m_Children:
   - {fileID: 1797172748}
   m_Father: {fileID: 0}
+--- !u!95 &1754993252
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1754993246}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0e2ebd65eebdc14a8129a41cd6eaaca, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1001 &1757986947
 Prefab:
   m_ObjectHideFlags: 0
@@ -6960,6 +7305,7 @@ GameObject:
   - 114: {fileID: 1781498721}
   - 135: {fileID: 1781498720}
   - 54: {fileID: 1781498719}
+  - 95: {fileID: 1781498724}
   m_Layer: 10
   m_Name: Zone_Jaune_2
   m_TagString: Untagged
@@ -6992,7 +7338,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1781498721
 MonoBehaviour:
@@ -7037,10 +7383,24 @@ Transform:
   m_GameObject: {fileID: 1781498718}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -24.5032902, y: 26.3883972, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: .440783709}
+  m_LocalScale: {x: 2, y: 2, z: .440783709}
   m_Children:
   - {fileID: 332240593}
   m_Father: {fileID: 0}
+--- !u!95 &1781498724
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1781498718}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0e2ebd65eebdc14a8129a41cd6eaaca, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1001 &1784778149
 Prefab:
   m_ObjectHideFlags: 0
@@ -7192,7 +7552,7 @@ Transform:
   m_PrefabInternal: {fileID: 251282517}
   m_GameObject: {fileID: 1797172747}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0233192444, y: .284194946, z: 0}
+  m_LocalPosition: {x: -.227783203, y: .284194946, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 2.26868606}
   m_Children: []
   m_Father: {fileID: 1754993251}
@@ -7304,6 +7664,7 @@ GameObject:
   - 114: {fileID: 1910672760}
   - 135: {fileID: 1910672759}
   - 54: {fileID: 1910672758}
+  - 95: {fileID: 1910672763}
   m_Layer: 10
   m_Name: Zone_Rouge_1
   m_TagString: Untagged
@@ -7336,7 +7697,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1910672760
 MonoBehaviour:
@@ -7381,10 +7742,24 @@ Transform:
   m_GameObject: {fileID: 1910672757}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: .440783709}
+  m_LocalScale: {x: 4, y: 4, z: .440783709}
   m_Children:
   - {fileID: 192752021}
   m_Father: {fileID: 0}
+--- !u!95 &1910672763
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1910672757}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0e2ebd65eebdc14a8129a41cd6eaaca, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 0
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1001 &1940697489
 Prefab:
   m_ObjectHideFlags: 0
@@ -7805,6 +8180,7 @@ GameObject:
   - 114: {fileID: 2029217871}
   - 135: {fileID: 2029217870}
   - 54: {fileID: 2029217869}
+  - 95: {fileID: 2029217874}
   m_Layer: 10
   m_Name: Zone_Rouge_7
   m_TagString: Untagged
@@ -7837,7 +8213,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2029217871
 MonoBehaviour:
@@ -7882,10 +8258,24 @@ Transform:
   m_GameObject: {fileID: 2029217868}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 48.7481918, y: -17.4981976, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: .440783709}
+  m_LocalScale: {x: 2.5, y: 2.5, z: .440783709}
   m_Children:
   - {fileID: 845903695}
   m_Father: {fileID: 0}
+--- !u!95 &2029217874
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2029217868}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0e2ebd65eebdc14a8129a41cd6eaaca, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1 &2035671604
 GameObject:
   m_ObjectHideFlags: 0
@@ -8003,6 +8393,7 @@ GameObject:
   - 114: {fileID: 2071495682}
   - 135: {fileID: 2071495681}
   - 54: {fileID: 2071495680}
+  - 95: {fileID: 2071495685}
   m_Layer: 10
   m_Name: Zone_Jaune_6
   m_TagString: Untagged
@@ -8035,7 +8426,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2071495682
 MonoBehaviour:
@@ -8080,10 +8471,24 @@ Transform:
   m_GameObject: {fileID: 2071495679}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -15.1865864, y: -40.1326675, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: .440783709}
+  m_LocalScale: {x: 2, y: 2, z: .440783709}
   m_Children:
   - {fileID: 1238406837}
   m_Father: {fileID: 0}
+--- !u!95 &2071495685
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2071495679}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0e2ebd65eebdc14a8129a41cd6eaaca, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1001 &2081807823
 Prefab:
   m_ObjectHideFlags: 0
@@ -8575,6 +8980,7 @@ GameObject:
   - 114: {fileID: 2125265585}
   - 135: {fileID: 2125265584}
   - 54: {fileID: 2125265583}
+  - 95: {fileID: 2125265588}
   m_Layer: 10
   m_Name: Zone_Rouge_4
   m_TagString: Untagged
@@ -8607,7 +9013,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2125265585
 MonoBehaviour:
@@ -8652,10 +9058,24 @@ Transform:
   m_GameObject: {fileID: 2125265582}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -8.46245956, y: 46.7732544, z: 0}
-  m_LocalScale: {x: 1.70000005, y: 1.70000005, z: .440783709}
+  m_LocalScale: {x: 3.5, y: 3.5, z: .440783709}
   m_Children:
   - {fileID: 301115881}
   m_Father: {fileID: 0}
+--- !u!95 &2125265588
+Animator:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2125265582}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0e2ebd65eebdc14a8129a41cd6eaaca, type: 2}
+  m_CullingMode: 0
+  m_ApplyRootMotion: 1
+  m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!1001 &2136185838
 Prefab:
   m_ObjectHideFlags: 0

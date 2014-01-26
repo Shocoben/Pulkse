@@ -21,7 +21,7 @@ TextureImporter:
   generateCubemap: 0
   seamlessCubemap: 0
   textureFormat: -3
-  maxTextureSize: 2048
+  maxTextureSize: 4096
   textureSettings:
     filterMode: -1
     aniso: 1
@@ -49,7 +49,7 @@ TextureImporter:
         width: 432
         height: 425
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: ggj_Zone_Sheet_2_1
       rect:
         serializedVersion: 2
@@ -58,7 +58,7 @@ TextureImporter:
         width: 427
         height: 423
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: ggj_Zone_Sheet_2_2
       rect:
         serializedVersion: 2
@@ -67,7 +67,7 @@ TextureImporter:
         width: 427
         height: 423
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: ggj_Zone_Sheet_2_3
       rect:
         serializedVersion: 2
@@ -76,7 +76,7 @@ TextureImporter:
         width: 426
         height: 427
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: ggj_Zone_Sheet_2_4
       rect:
         serializedVersion: 2
@@ -85,7 +85,7 @@ TextureImporter:
         width: 419
         height: 423
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: ggj_Zone_Sheet_2_5
       rect:
         serializedVersion: 2
@@ -94,7 +94,7 @@ TextureImporter:
         width: 419
         height: 427
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: ggj_Zone_Sheet_2_6
       rect:
         serializedVersion: 2
@@ -103,7 +103,7 @@ TextureImporter:
         width: 415
         height: 427
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: ggj_Zone_Sheet_2_7
       rect:
         serializedVersion: 2
@@ -112,7 +112,7 @@ TextureImporter:
         width: 414
         height: 427
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: ggj_Zone_Sheet_2_8
       rect:
         serializedVersion: 2
@@ -121,7 +121,7 @@ TextureImporter:
         width: 410
         height: 425
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: ggj_Zone_Sheet_2_9
       rect:
         serializedVersion: 2
@@ -130,7 +130,7 @@ TextureImporter:
         width: 410
         height: 427
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: ggj_Zone_Sheet_2_10
       rect:
         serializedVersion: 2
@@ -139,7 +139,7 @@ TextureImporter:
         width: 414
         height: 427
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: ggj_Zone_Sheet_2_11
       rect:
         serializedVersion: 2
@@ -148,7 +148,7 @@ TextureImporter:
         width: 413
         height: 427
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: ggj_Zone_Sheet_2_12
       rect:
         serializedVersion: 2
@@ -157,7 +157,7 @@ TextureImporter:
         width: 410
         height: 427
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: ggj_Zone_Sheet_2_13
       rect:
         serializedVersion: 2
@@ -166,7 +166,7 @@ TextureImporter:
         width: 414
         height: 429
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: ggj_Zone_Sheet_2_14
       rect:
         serializedVersion: 2
@@ -175,7 +175,7 @@ TextureImporter:
         width: 411
         height: 429
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: ggj_Zone_Sheet_2_15
       rect:
         serializedVersion: 2
@@ -184,16 +184,16 @@ TextureImporter:
         width: 410
         height: 429
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: ggj_Zone_Sheet_2_16
       rect:
         serializedVersion: 2
-        x: 7268
+        x: 7280
         y: 518
-        width: 413
+        width: 400
         height: 431
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: ggj_Zone_Sheet_2_17
       rect:
         serializedVersion: 2
@@ -202,7 +202,7 @@ TextureImporter:
         width: 414
         height: 433
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: ggj_Zone_Sheet_2_18
       rect:
         serializedVersion: 2
@@ -211,7 +211,7 @@ TextureImporter:
         width: 410
         height: 434
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: ggj_Zone_Sheet_2_19
       rect:
         serializedVersion: 2
@@ -220,7 +220,7 @@ TextureImporter:
         width: 412
         height: 434
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
     - name: ggj_Zone_Sheet_2_20
       rect:
         serializedVersion: 2
@@ -229,6 +229,6 @@ TextureImporter:
         width: 411
         height: 440
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
   spritePackingTag: 
   userData: 
