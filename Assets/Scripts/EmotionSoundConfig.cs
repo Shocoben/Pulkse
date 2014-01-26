@@ -110,17 +110,19 @@ public class EmotionSoundConfig : Singleton<EmotionSoundConfig> {
 				}
 			}
 		}
+	}
 
+	public void Start()
+	{
 		GameObject[] spawnsGOs = GameObject.FindGameObjectsWithTag(spawnPointsTag);
-
+		
+		Debug.Log(spawnsGOs.Length);
 		for (int i = 0; i < spawnsGOs.Length; ++i)
 		{
 			EmotionSpawn spawn = spawnsGOs[i].GetComponent<EmotionSpawn>();
 			_spawnPoints.Add( spawn );
 			spawn.Spawn();
 		}
-
-
 	}
 	
 	public void addToQueue(EmotionBall ball)
@@ -176,9 +178,6 @@ public class EmotionSoundConfig : Singleton<EmotionSoundConfig> {
 		{
 			_isFollowingTempo = false;
 		}
-	
-			
-
 
 		spawnNewBall();
 

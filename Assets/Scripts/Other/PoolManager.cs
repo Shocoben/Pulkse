@@ -30,6 +30,8 @@ public class PoolManager : MonoBehaviour {
 
     public void loadPoolableObjects()
     {
+
+
         for (int i = 0; i < poolableCategories.Count; ++i)
         {
             string categoryName = poolableCategories[i].name;
