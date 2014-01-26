@@ -190,8 +190,8 @@ MonoBehaviour:
   toActiveAndDesactive: {fileID: 100000}
   reactivity: 2
   followBall: {fileID: 0}
-  speed: 3
-  emotion: 1
+  speed: 3.5
+  emotion: 0
   audioSource: {fileID: 8200000}
   pulseSpeed: .200000003
   basicScale: {x: 0, y: 0, z: 0}
