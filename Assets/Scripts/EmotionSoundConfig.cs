@@ -42,7 +42,7 @@ public class EmotionSoundConfig : Singleton<EmotionSoundConfig> {
 	private List<EmotionBall> queueToPlay = new List<EmotionBall>();
 
 
-	private List<EmotionSpawn> spawnPoints = new List<EmotionSpawn>();
+	private List<EmotionSpawn> _spawnPoints = new List<EmotionSpawn>();
 	public string spawnPointsTag = "SpawnPoint";
 	protected override void Awake ()
 	{
@@ -70,7 +70,7 @@ public class EmotionSoundConfig : Singleton<EmotionSoundConfig> {
 		for (int i = 0; i < spawnsGOs.Length; ++i)
 		{
 			EmotionSpawn spawn = spawnsGOs[i].GetComponent<EmotionSpawn>();
-			spawnPoints.Add( spawn );
+			_spawnPoints.Add( spawn );
 			spawn.Spawn();
 		}
 
@@ -115,6 +115,34 @@ public class EmotionSoundConfig : Singleton<EmotionSoundConfig> {
 		if (_playingBallCount <= 0)
 		{
 			_isFollowingTempo = false;
+		}
+
+		spawnNewBall();
+
+	}
+
+	public bool isOutOfCamera(Vector3 pos)
+	{
+		if (pos.x < 0 || pos.x > 1 || pos.y < 0 || pos.y > 1)
+		{
+			return true;
+		}
+		return false;
+	}
+
+	public void spawnNewBall()
+	{
+		for (int i = 0; i < _spawnPoints.Count; ++i)
+		{
+			Vector3 spawnViewportpOs = Camera.main.WorldToViewportPoint(_spawnPoints[i].transform.position);
+			if (isOutOfCamera(spawnViewportpOs))
+			{
+				EmotionSpawn spawnPoint = _spawnPoints[i];
+				spawnPoint.Spawn();
+				_spawnPoints.Remove(spawnPoint);
+				_spawnPoints.Add(spawnPoint);
+				return;
+			}
 		}
 	}
 

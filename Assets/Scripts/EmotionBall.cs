@@ -18,6 +18,7 @@ public class EmotionBall : LookAtObj
 		,yellow
 		,orange
 		,violet
+		,white
 	}
 
 	public Emotions emotion;

@@ -423,9 +423,22 @@ MonoBehaviour:
   startDirection: {x: 0, y: 0}
   speed: 3
   rotateTail: {fileID: 400002}
-  lastTempo: 0
-  tempo: 1
-  timeSlow: .5
+  infos:
+  - emotion: 0
+    goAnim: {fileID: 0}
+  - emotion: 1
+    goAnim: {fileID: 100010}
+  - emotion: 2
+    goAnim: {fileID: 100010}
+  - emotion: 3
+    goAnim: {fileID: 0}
+  - emotion: 4
+    goAnim: {fileID: 0}
+  - emotion: 5
+    goAnim: {fileID: 0}
+  - emotion: 6
+    goAnim: {fileID: 100004}
+  returnToWhiteTime: 1
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -2,6 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 
+[System.Serializable]
+public class BallEmosInfos
+{
+	public EmotionBall.Emotions emotion;
+	public GameObject goAnim;
+}
+
 public class Ball : LookAtObj {
 
     private static List<Ball> _instances = new List<Ball>();
@@ -16,8 +23,18 @@ public class Ball : LookAtObj {
 
     private Vector2 _direction;
 
+
+	public BallEmosInfos[] infos;
+
 	private List<EmotionBall> _emotions = new List<EmotionBall>();
+	private Dictionary<EmotionBall.Emotions, List<EmotionBall>> _ballsByEmotion = new Dictionary<EmotionBall.Emotions, List<EmotionBall>>();
 	private List<EmotionBall.Emotions> _emotionsZone = new List<EmotionBall.Emotions>();
+
+	private Dictionary<EmotionBall.Emotions, BallEmosInfos> _emotionsInfos = new Dictionary<EmotionBall.Emotions, BallEmosInfos>();
+
+	private EmotionBall.Emotions cEmo;
+	private float lastChangeEmo = -1000;
+	
 
 	public List<EmotionBall.Emotions> emotionsZone
 	{
@@ -27,19 +44,33 @@ public class Ball : LookAtObj {
 		}
 	}
 
-	public float lastTempo = 0;
-	public float tempo = 1;
+	public List<EmotionBall> getBallsOfEmotion( EmotionBall.Emotions emo)
+	{
+		return _ballsByEmotion[emo];
+	}
+	
+
 	public void addEmotion(EmotionBall emo)
 	{
-		if (_emotions.Count <= 0)
-			lastTempo = Time.time;
 		_emotions.Add(emo);
-
+		_ballsByEmotion[emo.emotion].Add(emo);
 	}
 
 	public void addZone(EmotionBall.Emotions emo)
 	{
+		if (emo != cEmo)
+		{
+			changeEmotion(emo);
+		}
 		_emotionsZone.Add(emo);
+	}
+
+	public void changeEmotion(EmotionBall.Emotions emo)
+	{
+		_emotionsInfos[cEmo].goAnim.SetActive(false);
+		cEmo = emo;
+		lastChangeEmo = Time.time;
+		_emotionsInfos[cEmo].goAnim.SetActive(true);
 	}
 
 	public void removeZone(EmotionBall.Emotions emo)
@@ -53,6 +84,7 @@ public class Ball : LookAtObj {
 	public void removeEmotion(EmotionBall emo)
 	{
 		_emotions.Remove(emo);
+		_ballsByEmotion[emo.emotion].Remove(emo);
 	}
 
     public static List<Ball> instances
@@ -69,6 +101,14 @@ public class Ball : LookAtObj {
 		base.Start();
         _direction = startDirection;
         _instances.Add(this);
+		cEmo = EmotionBall.Emotions.white;
+
+		for (int i = 0; i < infos.Length; ++i)
+		{
+			_emotionsInfos.Add(infos[i].emotion, infos[i]);
+			_ballsByEmotion.Add(infos[i].emotion, new List<EmotionBall>());
+		}
+
     }
 
     public void OnDestroy()
@@ -104,21 +144,25 @@ public class Ball : LookAtObj {
     }
 
 
-
+	public float returnToWhiteTime = 1;
 	// Update is called once per frame
 	override public void Update () 
     {   
         #if UNITY_STANDALONE || UNITY_WEBPLAYER || UNITY_EDITOR
             mouseInputs();
-        #else 
+        #else
             touchInputs();
         #endif
 
         transform.Translate(transform.right * speed * Time.deltaTime, Space.World);
+
+		if (_emotionsZone.Count <= 0 && lastChangeEmo + returnToWhiteTime <= Time.time)
+		{
+			changeEmotion(EmotionBall.Emotions.white);
+		}
 	}
 	
 
-    public float timeSlow = 0.5f;
     void touchInputs()
     {
         if (Input.touchCount > 0)
