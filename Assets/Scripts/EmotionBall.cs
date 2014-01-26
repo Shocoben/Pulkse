@@ -9,7 +9,7 @@ public class EmotionBall : LookAtObj
 {
 
 	public Ball followBall;
-	public float speed = 5;
+	public float speed = 8;
 
 	public enum Emotions {
 		red
