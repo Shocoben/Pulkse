@@ -196,6 +196,13 @@ MonoBehaviour:
   pulseSpeed: .200000003
   basicScale: {x: 0, y: 0, z: 0}
   graph: {fileID: 21200000}
+  move: 0
+  bounceOthers:
+  - Zone
+  - Limits
+  bounceLayer:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1

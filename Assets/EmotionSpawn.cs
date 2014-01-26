@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 using System.Collections;
 
 public class EmotionSpawn : MonoBehaviour {
@@ -6,6 +7,8 @@ public class EmotionSpawn : MonoBehaviour {
 	public string poolName;
 	public bool showDebug = false;
 	public EmotionBall.Emotions[] spawnEmotions;
+
+	public bool emotionBallMoving = false;
 
 	public void Spawn()
 	{
@@ -16,7 +19,11 @@ public class EmotionSpawn : MonoBehaviour {
 		if (showDebug)
 			Debug.Log(id +"go" + pGO);
 
-		pGO.GetComponent<EmotionBall>().emotion = spawnEmotions[id];;
+		EmotionBall pBall = pGO.GetComponent<EmotionBall>();
+
+		pBall.emotion = spawnEmotions[id];
+		pBall.move = emotionBallMoving;
+
 		pGO.Alive();
 	}
 }

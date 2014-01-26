@@ -74,6 +74,8 @@ public class EmotionBall : LookAtObj
 		transform.parent.localScale = basicScale;
 		targetScale = basicScale;
 		setupForEmotion();
+		if (move)
+			randomizeDirection();
 	}
 
 	public void setupForEmotion()
@@ -82,11 +84,28 @@ public class EmotionBall : LookAtObj
 		graph.material = infos.material;
 	}
 
+	public bool move = false;
+	private Vector3 direction = Vector3.zero;
+
+	public void randomizeDirection()
+	{
+		direction.x = UnityEngine.Random.value;
+		direction.y = UnityEngine.Random.value;
+		direction.Normalize();
+	}
+
+
 	// Update is called once per frame
 	public override void Update ()
 	{
 		base.Update ();
-		doFollowBall();
+
+		if (followBall != null)
+			doFollowBall();
+		else if (move)
+		{
+			transform.parent.rigidbody.MovePosition(transform.parent.position + direction * Time.deltaTime * speed);
+		}
 
 		if (_isPlaying && (_lastPersonnalTempoPlay + EmotionSoundConfig.Instance.generalTempo) <= Time.time)
 		{
@@ -165,6 +184,9 @@ public class EmotionBall : LookAtObj
 		}
 	}
 
+	public List<string> bounceOthers;
+	public LayerMask bounceLayer;
+
 	public void OnTriggerEnter(Collider other)
 	{
 		if ( other.CompareTag("Player") && followBall == null)
@@ -176,6 +198,26 @@ public class EmotionBall : LookAtObj
 
 			EmotionSoundConfig.Instance.addPlayingBall( this );
 			_launchedPlay = false;
+		}
+		if (move)
+		{
+			Debug.Log("othe.tag " + other.tag + " name " + other.name + "bounce" + bounceOthers.Contains(other.tag));
+  		}
+		if (move && bounceOthers.Contains(other.tag))
+		{
+			bounce(other.gameObject);
+		}
+	}
+
+	public void bounce(GameObject other)
+	{
+
+		Vector3 vToMe = other.transform.position - transform.position;
+		vToMe.Normalize();
+		RaycastHit hit;
+		if ( Physics.Raycast( transform.position, vToMe.normalized, out hit, 50, bounceLayer.value) )
+		{
+			direction += hit.normal * 3;
 		}
 	}
 
