@@ -1,0 +1,189 @@
+fileFormatVersion: 2
+guid: 429153ef7076e374d989f9f4ebe7b6ca
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ggj_mad_Sheet_1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 69
+        width: 291
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_mad_Sheet_1_1
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 69
+        width: 287
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_mad_Sheet_1_2
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 69
+        width: 287
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_mad_Sheet_1_3
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 69
+        width: 284
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_mad_Sheet_1_4
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 69
+        width: 282
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_mad_Sheet_1_5
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 69
+        width: 277
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_mad_Sheet_1_6
+      rect:
+        serializedVersion: 2
+        x: 2075
+        y: 61
+        width: 277
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_mad_Sheet_1_7
+      rect:
+        serializedVersion: 2
+        x: 2417
+        y: 61
+        width: 272
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_mad_Sheet_1_8
+      rect:
+        serializedVersion: 2
+        x: 2752
+        y: 56
+        width: 279
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_mad_Sheet_1_9
+      rect:
+        serializedVersion: 2
+        x: 3094
+        y: 46
+        width: 276
+        height: 343
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_mad_Sheet_1_10
+      rect:
+        serializedVersion: 2
+        x: 3402
+        y: 34
+        width: 299
+        height: 357
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_mad_Sheet_1_11
+      rect:
+        serializedVersion: 2
+        x: 3739
+        y: 21
+        width: 320
+        height: 380
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_mad_Sheet_1_12
+      rect:
+        serializedVersion: 2
+        x: 4089
+        y: 10
+        width: 334
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_mad_Sheet_1_13
+      rect:
+        serializedVersion: 2
+        x: 4464
+        y: 10
+        width: 338
+        height: 397
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_mad_Sheet_1_14
+      rect:
+        serializedVersion: 2
+        x: 4841
+        y: 0
+        width: 337
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_mad_Sheet_1_15
+      rect:
+        serializedVersion: 2
+        x: 5224
+        y: 0
+        width: 335
+        height: 411
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
