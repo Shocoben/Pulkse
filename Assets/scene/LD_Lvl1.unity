@@ -271,9 +271,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 66201519}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 536121946}
   m_Father: {fileID: 0}
 --- !u!114 &66201525
 MonoBehaviour:
@@ -291,7 +292,69 @@ MonoBehaviour:
   reactivity: .100000001
   target: {fileID: 1955262571}
   _direction: {x: 0, y: 0, z: 0}
-  speed: 2.5
+  speed: 3
+--- !u!1 &71084537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 71084539}
+  - 108: {fileID: 71084538}
+  m_Layer: 0
+  m_Name: Point light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &71084538
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 71084537}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Type: 2
+  m_Color: {r: .996078432, g: 0, b: 0, a: 1}
+  m_Intensity: 1
+  m_Range: 15
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_Softness: 4
+    m_SoftnessFade: 1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
+--- !u!4 &71084539
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 71084537}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.276365936, y: .208829254, z: 0}
+  m_LocalScale: {x: .333333343, y: .333333343, z: 2.26868629}
+  m_Children: []
+  m_Father: {fileID: 1113686898}
 --- !u!1 &80829510
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,6 +488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 0000000000000000
 --- !u!1 &129584269
 GameObject:
@@ -455,6 +519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 000000000300000002000000
 --- !u!4 &129584271
 Transform:
@@ -467,6 +532,68 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &147156144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 147156145}
+  - 108: {fileID: 147156146}
+  m_Layer: 0
+  m_Name: Point light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &147156145
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 147156144}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.37494278, y: .286209106, z: 0}
+  m_LocalScale: {x: .5, y: .5, z: 2.26868629}
+  m_Children: []
+  m_Father: {fileID: 1134058232}
+--- !u!108 &147156146
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 147156144}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Type: 2
+  m_Color: {r: .996078432, g: 0, b: 0, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_Softness: 4
+    m_SoftnessFade: 1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
 --- !u!1 &183318561
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,6 +649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 0000000000000000
 --- !u!4 &192752021
 Transform:
@@ -549,7 +677,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &198022891
 Transform:
   m_ObjectHideFlags: 0
@@ -574,7 +702,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
-  spawnEmotions: 03000000
+  showDebug: 0
+  spawnEmotions: 00000000
 --- !u!1001 &251282517
 Prefab:
   m_ObjectHideFlags: 0
@@ -668,6 +797,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 000000000300000002000000
 --- !u!4 &265981492
 Transform:
@@ -709,6 +839,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 000000000300000002000000
 --- !u!4 &289509578
 Transform:
@@ -853,6 +984,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 0000000000000000
 --- !u!1 &318400750
 GameObject:
@@ -1003,7 +1135,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &332240593
 Transform:
   m_ObjectHideFlags: 0
@@ -1028,7 +1160,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
-  spawnEmotions: 03000000
+  showDebug: 0
+  spawnEmotions: 00000000
 --- !u!1 &374878769
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,6 +1254,7 @@ Transform:
   m_LocalPosition: {x: -36.2061691, y: 36.4684868, z: 0}
   m_LocalScale: {x: 3.5, y: 3.5, z: .440783709}
   m_Children:
+  - {fileID: 961761935}
   - {fileID: 105836297}
   m_Father: {fileID: 0}
 --- !u!95 &374878775
@@ -1200,11 +1334,85 @@ Prefab:
       propertyPath: spawnEmotions.Array.data[0]
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
   m_RootGameObject: {fileID: 794633769}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &405008090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 405008094}
+  - 33: {fileID: 405008093}
+  - 64: {fileID: 405008092}
+  - 23: {fileID: 405008091}
+  m_Layer: 0
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &405008091
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 405008090}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 98629949, guid: f6e7a2fc901935d44a0c3e2eca6ae0a0, type: 3}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!64 &405008092
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 405008090}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_SmoothSphereCollisions: 0
+  m_Convex: 0
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &405008093
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 405008090}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &405008094
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 405008090}
+  m_LocalRotation: {x: -3.09086232e-08, y: -.707106829, z: .707106829, w: -3.09086232e-08}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 14, y: 14, z: 14}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &437934918
 GameObject:
   m_ObjectHideFlags: 0
@@ -1234,6 +1442,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 00000000
 --- !u!4 &437934920
 Transform:
@@ -1338,6 +1547,7 @@ Transform:
   m_LocalPosition: {x: 48.0831261, y: 17.2207947, z: 0}
   m_LocalScale: {x: 3, y: 3, z: .440783709}
   m_Children:
+  - {fileID: 1850412649}
   - {fileID: 437934920}
   m_Father: {fileID: 0}
 --- !u!95 &445568888
@@ -1568,6 +1778,10 @@ Prefab:
       propertyPath: spawnEmotions.Array.data[0]
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
   m_RootGameObject: {fileID: 1546672706}
@@ -1640,6 +1854,10 @@ Prefab:
       propertyPath: spawnEmotions.Array.data[1]
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
   m_RootGameObject: {fileID: 890250738}
@@ -1674,6 +1892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 02000000
 --- !u!4 &520547379
 Transform:
@@ -1686,6 +1905,68 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 2.26868629}
   m_Children: []
   m_Father: {fileID: 1519805365}
+--- !u!1 &536121944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 536121946}
+  - 108: {fileID: 536121945}
+  m_Layer: 0
+  m_Name: Directional light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &536121945
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 536121944}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Type: 2
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: .5
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_Softness: 4
+    m_SoftnessFade: 1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
+--- !u!4 &536121946
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 536121944}
+  m_LocalRotation: {x: .408217937, y: -.234569728, z: .109381661, w: .875426114}
+  m_LocalPosition: {x: 0, y: -.843183517, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 66201524}
 --- !u!1001 &576922464
 Prefab:
   m_ObjectHideFlags: 0
@@ -1771,6 +2052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 02000000
 --- !u!4 &596729798
 Transform:
@@ -1798,7 +2080,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &612868863
 Transform:
   m_ObjectHideFlags: 0
@@ -1823,7 +2105,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
-  spawnEmotions: 03000000
+  showDebug: 0
+  spawnEmotions: 00000000
 --- !u!1001 &636902945
 Prefab:
   m_ObjectHideFlags: 0
@@ -1901,7 +2184,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
-  spawnEmotions: 000000000300000002000000
+  showDebug: 0
+  spawnEmotions: 000000000300000005000000
 --- !u!4 &649233518
 Transform:
   m_ObjectHideFlags: 0
@@ -1942,7 +2226,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
-  spawnEmotions: 000000000300000002000000
+  showDebug: 0
+  spawnEmotions: 000000000400000002000000
 --- !u!4 &658974236
 Transform:
   m_ObjectHideFlags: 0
@@ -2177,6 +2462,10 @@ Prefab:
       propertyPath: spawnEmotions.Array.data[1]
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
   m_RootGameObject: {fileID: 301115880}
@@ -2354,6 +2643,91 @@ Animator:
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+--- !u!1 &741534158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 741534160}
+  - 82: {fileID: 741534159}
+  m_Layer: 0
+  m_Name: fondsonore
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &741534159
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 741534158}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 6c8ce9883f95955498942536b5bb311c, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: .0299999993
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!4 &741534160
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 741534158}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.56449509, y: -1.88391936, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1001 &747569150
 Prefab:
   m_ObjectHideFlags: 0
@@ -2480,6 +2854,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
       propertyPath: spawnEmotions.Array.data[0]
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
@@ -2735,7 +3113,70 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 00000000
+--- !u!1 &795453784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 795453785}
+  - 108: {fileID: 795453786}
+  m_Layer: 0
+  m_Name: Point light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &795453785
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 795453784}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.183377072, y: .323098749, z: 0}
+  m_LocalScale: {x: .400000006, y: .400000006, z: 2.26868629}
+  m_Children: []
+  m_Father: {fileID: 2029217873}
+--- !u!108 &795453786
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 795453784}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Type: 2
+  m_Color: {r: .996078432, g: 0, b: 0, a: 1}
+  m_Intensity: 1
+  m_Range: 13
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_Softness: 4
+    m_SoftnessFade: 1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
 --- !u!1001 &812096869
 Prefab:
   m_ObjectHideFlags: 0
@@ -2785,7 +3226,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
       propertyPath: spawnEmotions.Array.data[1]
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
       propertyPath: spawnEmotions.Array.data[0]
@@ -2912,6 +3353,68 @@ Prefab:
   m_RootGameObject: {fileID: 1646611349}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &842180399
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 842180400}
+  - 108: {fileID: 842180401}
+  m_Layer: 0
+  m_Name: Point light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &842180400
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 842180399}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.207551956, y: .23989296, z: 0}
+  m_LocalScale: {x: .5, y: .5, z: 2.26868606}
+  m_Children: []
+  m_Father: {fileID: 1421495400}
+--- !u!108 &842180401
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 842180399}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Type: 2
+  m_Color: {r: .996078432, g: 0, b: 0, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_Softness: 4
+    m_SoftnessFade: 1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
 --- !u!1 &842339328
 GameObject:
   m_ObjectHideFlags: 0
@@ -3004,6 +3507,7 @@ Transform:
   m_LocalPosition: {x: -1.40285301, y: -50.7976494, z: 0}
   m_LocalScale: {x: 2, y: 2, z: .440783709}
   m_Children:
+  - {fileID: 1244895220}
   - {fileID: 1546672707}
   m_Father: {fileID: 0}
 --- !u!95 &842339334
@@ -3220,6 +3724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 00000000
 --- !u!1 &846751272
 GameObject:
@@ -3451,6 +3956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 00000000
 --- !u!4 &890250740
 Transform:
@@ -3492,7 +3998,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
-  spawnEmotions: 000000000300000002000000
+  showDebug: 0
+  spawnEmotions: 050000000300000002000000
 --- !u!4 &899299828
 Transform:
   m_ObjectHideFlags: 0
@@ -3533,6 +4040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 00000000
 --- !u!4 &911532625
 Transform:
@@ -3574,6 +4082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 000000000300000002000000
 --- !u!4 &912715753
 Transform:
@@ -3694,6 +4203,68 @@ Animator:
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+--- !u!1 &961761933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 961761935}
+  - 108: {fileID: 961761934}
+  m_Layer: 0
+  m_Name: Point light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &961761934
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 961761933}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Type: 2
+  m_Color: {r: .996078432, g: 0, b: 0, a: 1}
+  m_Intensity: 1
+  m_Range: 17
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_Softness: 4
+    m_SoftnessFade: 1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
+--- !u!4 &961761935
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 961761933}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.265335083, y: .304551274, z: 0}
+  m_LocalScale: {x: .285714298, y: .285714298, z: 2.26868629}
+  m_Children: []
+  m_Father: {fileID: 374878774}
 --- !u!1001 &979549339
 Prefab:
   m_ObjectHideFlags: 0
@@ -3743,15 +4314,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
       propertyPath: spawnEmotions.Array.data[1]
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
       propertyPath: spawnEmotions.Array.data[0]
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
       propertyPath: spawnEmotions.Array.data[2]
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
@@ -3825,6 +4396,10 @@ Prefab:
       propertyPath: spawnEmotions.Array.data[1]
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
   m_RootGameObject: {fileID: 437934918}
@@ -3845,7 +4420,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1001922328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3859,7 +4434,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
-  spawnEmotions: 03000000
+  showDebug: 0
+  spawnEmotions: 00000000
 --- !u!4 &1001922329
 Transform:
   m_ObjectHideFlags: 0
@@ -4013,8 +4589,8 @@ MonoBehaviour:
     material: {fileID: 2100000, guid: 78db0ca6a0269f940b86987d86dfcd29, type: 2}
     clipsInfos:
     - clip: {fileID: 8300000, guid: 734a40f25986fa04880d779006ee9dfc, type: 3}
-      forceTempo: .200000003
-      stopTempo: 0
+      forceTempo: -.100000001
+      stopTempo: -.119999997
       volumeStart: 1
     - clip: {fileID: 8300000, guid: 95d2f3d326050bc469499cb96eb45feb, type: 3}
       forceTempo: .5
@@ -4032,29 +4608,41 @@ MonoBehaviour:
     material: {fileID: 2100000, guid: a9a10b5c59f48aa42add415819891e60, type: 2}
     clipsInfos:
     - clip: {fileID: 8300000, guid: 4fb2d2d4dd4a6064b8199b84facba47e, type: 3}
+      forceTempo: -.0299999993
+      stopTempo: -.0299999993
+      volumeStart: 1
+    - clip: {fileID: 8300000, guid: a73cd676167420b4183bfe76f0573559, type: 3}
       forceTempo: .200000003
       stopTempo: 0
       volumeStart: 1
-    - clip: {fileID: 8300000, guid: a73cd676167420b4183bfe76f0573559, type: 3}
+    - clip: {fileID: 8300000, guid: 870f41b060d658645b4d314177cfbb39, type: 3}
+      forceTempo: .200000003
+      stopTempo: 0
+      volumeStart: 1
+    - clip: {fileID: 8300000, guid: 7ed13bd6dc893d34d98593d5ad53df93, type: 3}
       forceTempo: .200000003
       stopTempo: 0
       volumeStart: 1
   - emotionName: 2
     material: {fileID: 2100000, guid: a1fa38c312abb554db663bb177c7d48b, type: 2}
     clipsInfos:
-    - clip: {fileID: 8300000, guid: 870f41b060d658645b4d314177cfbb39, type: 3}
-      forceTempo: .200000003
-      stopTempo: 0
+    - clip: {fileID: 8300000, guid: 5d2d6fd538ac7c743b93f21a0f25034d, type: 3}
+      forceTempo: 0
+      stopTempo: -.330000013
       volumeStart: 1
-    - clip: {fileID: 8300000, guid: 870f41b060d658645b4d314177cfbb39, type: 3}
+    - clip: {fileID: 8300000, guid: f31a13bb3dc4136489203c91c73f3941, type: 3}
       forceTempo: .200000003
-      stopTempo: 0
+      stopTempo: .100000001
+      volumeStart: 1
+    - clip: {fileID: 8300000, guid: c52c4f52c37fce5418f6e1ad653761c0, type: 3}
+      forceTempo: .200000003
+      stopTempo: -.340000004
       volumeStart: 1
   - emotionName: 3
     material: {fileID: 2100000, guid: c27facdaa95d6fb46a930d0eb959da6c, type: 2}
     clipsInfos:
     - clip: {fileID: 8300000, guid: 3755ad18f18fb204a8eb84e01ec3d9bc, type: 3}
-      forceTempo: .200000003
+      forceTempo: 0
       stopTempo: 0
       volumeStart: 1
     - clip: {fileID: 8300000, guid: ca457018a99edfa4ab2edfadd236e084, type: 3}
@@ -4072,7 +4660,19 @@ MonoBehaviour:
   - emotionName: 4
     material: {fileID: 2100000, guid: 8663c5ca56c961444abd7a4310e9eb0b, type: 2}
     clipsInfos:
-    - clip: {fileID: 8300000, guid: 9a3f8102645d13b4a80ca9f584fb8ddb, type: 3}
+    - clip: {fileID: 8300000, guid: 7576cc8ab586e7f439b161c1ece3a67f, type: 3}
+      forceTempo: .200000003
+      stopTempo: 0
+      volumeStart: 1
+    - clip: {fileID: 8300000, guid: 78ce90b9f5520ca4fb19d95e50fabc8d, type: 3}
+      forceTempo: .200000003
+      stopTempo: 0
+      volumeStart: 1
+    - clip: {fileID: 8300000, guid: b3e4c68f42f9b604b96165f0a4bc17c9, type: 3}
+      forceTempo: .200000003
+      stopTempo: 0
+      volumeStart: 1
+    - clip: {fileID: 8300000, guid: d1a793cba77a28a41b131b55216c6670, type: 3}
       forceTempo: .200000003
       stopTempo: 0
       volumeStart: 1
@@ -4080,8 +4680,8 @@ MonoBehaviour:
     material: {fileID: 2100000, guid: 65714e0b77fc3e34a811a3fb4be2a314, type: 2}
     clipsInfos:
     - clip: {fileID: 8300000, guid: 4559a1b42dd03954eb1899385d27f7aa, type: 3}
-      forceTempo: .200000003
-      stopTempo: 0
+      forceTempo: -.0599999987
+      stopTempo: -.180000007
       volumeStart: 1
   generalTempo: 5
   generalAudioClipTempo: {fileID: 0}
@@ -4227,6 +4827,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
       propertyPath: spawnEmotions.Array.data[0]
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
@@ -4454,6 +5058,7 @@ Transform:
   m_LocalPosition: {x: 23.9138222, y: 40.5864983, z: 0}
   m_LocalScale: {x: 3, y: 3, z: .440783709}
   m_Children:
+  - {fileID: 71084539}
   - {fileID: 890250740}
   m_Father: {fileID: 0}
 --- !u!95 &1113686899
@@ -4607,7 +5212,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
-  spawnEmotions: 0300000001000000
+  showDebug: 0
+  spawnEmotions: 000000000300000002000000
 --- !u!4 &1129424182
 Transform:
   m_ObjectHideFlags: 0
@@ -4711,6 +5317,7 @@ Transform:
   m_LocalPosition: {x: -28.7553272, y: -45.60149, z: 0}
   m_LocalScale: {x: 2, y: 2, z: .440783709}
   m_Children:
+  - {fileID: 147156145}
   - {fileID: 911532625}
   m_Father: {fileID: 0}
 --- !u!95 &1134058233
@@ -4998,7 +5605,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1189471628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5012,7 +5619,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
-  spawnEmotions: 03000000
+  showDebug: 0
+  spawnEmotions: 00000000
 --- !u!4 &1189471629
 Transform:
   m_ObjectHideFlags: 0
@@ -5144,7 +5752,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
       propertyPath: spawnEmotions.Array.data[0]
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
       propertyPath: spawnEmotions.Array.data[2]
@@ -5170,7 +5778,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1238406836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5184,7 +5792,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
-  spawnEmotions: 03000000
+  showDebug: 0
+  spawnEmotions: 00000000
 --- !u!4 &1238406837
 Transform:
   m_ObjectHideFlags: 0
@@ -5196,6 +5805,68 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 2.26868606}
   m_Children: []
   m_Father: {fileID: 2071495684}
+--- !u!1 &1244895219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1244895220}
+  - 108: {fileID: 1244895221}
+  m_Layer: 0
+  m_Name: Point light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1244895220
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1244895219}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.222478986, y: .159420013, z: 0}
+  m_LocalScale: {x: .5, y: .5, z: 2.26868629}
+  m_Children: []
+  m_Father: {fileID: 842339333}
+--- !u!108 &1244895221
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1244895219}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Type: 2
+  m_Color: {r: .996078432, g: 0, b: 0, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_Softness: 4
+    m_SoftnessFade: 1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
 --- !u!1 &1264796226
 GameObject:
   m_ObjectHideFlags: 0
@@ -5236,7 +5907,70 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 02000000
+--- !u!1 &1266628817
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1266628818}
+  - 108: {fileID: 1266628819}
+  m_Layer: 0
+  m_Name: Point light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1266628818
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1266628817}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.313105792, y: .271186829, z: 0}
+  m_LocalScale: {x: .400000006, y: .400000006, z: 2.26868606}
+  m_Children: []
+  m_Father: {fileID: 1620859953}
+--- !u!108 &1266628819
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1266628817}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Type: 2
+  m_Color: {r: .996078432, g: 0, b: 0, a: 1}
+  m_Intensity: 1
+  m_Range: 13
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_Softness: 4
+    m_SoftnessFade: 1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
 --- !u!1001 &1279489717
 Prefab:
   m_ObjectHideFlags: 0
@@ -5385,6 +6119,7 @@ Transform:
   m_LocalPosition: {x: -35.2742653, y: 7.19073582, z: 0}
   m_LocalScale: {x: 4, y: 4, z: .440783709}
   m_Children:
+  - {fileID: 1767338755}
   - {fileID: 1956990311}
   m_Father: {fileID: 0}
 --- !u!95 &1282108366
@@ -5430,6 +6165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 000000000300000002000000
 --- !u!4 &1293764523
 Transform:
@@ -5687,6 +6423,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
       propertyPath: spawnEmotions.Array.data[1]
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
@@ -5952,6 +6692,68 @@ Prefab:
   m_RootGameObject: {fileID: 1866444317}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1384921695
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1384921697}
+  - 108: {fileID: 1384921696}
+  m_Layer: 0
+  m_Name: 
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1384921696
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1384921695}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Type: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_Softness: 4
+    m_SoftnessFade: 1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
+--- !u!4 &1384921697
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1384921695}
+  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106829}
+  m_LocalPosition: {x: -.554010153, y: 1.96593606, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &1385009020
 GameObject:
   m_ObjectHideFlags: 0
@@ -5981,7 +6783,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
-  spawnEmotions: 0300000001000000
+  showDebug: 0
+  spawnEmotions: 000000000300000002000000
 --- !u!4 &1385009022
 Transform:
   m_ObjectHideFlags: 0
@@ -5993,6 +6796,68 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &1392493882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1392493883}
+  - 108: {fileID: 1392493884}
+  m_Layer: 0
+  m_Name: Point light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1392493883
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1392493882}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.138502538, y: .491484016, z: 0}
+  m_LocalScale: {x: .25, y: .25, z: 2.26868629}
+  m_Children: []
+  m_Father: {fileID: 1910672762}
+--- !u!108 &1392493884
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1392493882}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Type: 2
+  m_Color: {r: .996078432, g: 0, b: 0, a: 1}
+  m_Intensity: 1
+  m_Range: 20
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_Softness: 4
+    m_SoftnessFade: 1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
 --- !u!1001 &1410377081
 Prefab:
   m_ObjectHideFlags: 0
@@ -6060,6 +6925,10 @@ Prefab:
       propertyPath: spawnEmotions.Array.data[1]
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
   m_RootGameObject: {fileID: 845903694}
@@ -6078,6 +6947,7 @@ GameObject:
   - 135: {fileID: 1421495397}
   - 54: {fileID: 1421495396}
   - 95: {fileID: 1421495401}
+  - 82: {fileID: 1421495402}
   m_Layer: 10
   m_Name: Zone_Rouge_End
   m_TagString: Untagged
@@ -6156,7 +7026,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -50.6165581, y: -32.429493, z: 0}
   m_LocalScale: {x: 2, y: 2, z: .440783709}
-  m_Children: []
+  m_Children:
+  - {fileID: 842180400}
   m_Father: {fileID: 0}
 --- !u!95 &1421495401
 Animator:
@@ -6172,6 +7043,64 @@ Animator:
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+--- !u!82 &1421495402
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1421495395}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: a5d524c7208893f4189b8785ae74a07c, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1426307149
 GameObject:
   m_ObjectHideFlags: 0
@@ -6201,7 +7130,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
-  spawnEmotions: 000000000300000002000000
+  showDebug: 0
+  spawnEmotions: 050000000100000000000000
 --- !u!4 &1426307151
 Transform:
   m_ObjectHideFlags: 0
@@ -6306,7 +7236,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
-  spawnEmotions: 000000000300000002000000
+  showDebug: 0
+  spawnEmotions: 040000000500000001000000
 --- !u!4 &1487227769
 Transform:
   m_ObjectHideFlags: 0
@@ -6347,6 +7278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 000000000300000002000000
 --- !u!4 &1506313087
 Transform:
@@ -6496,6 +7428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 000000000300000002000000
 --- !u!4 &1521432794
 Transform:
@@ -6548,6 +7481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 00000000
 --- !u!1 &1611434735
 GameObject:
@@ -6578,6 +7512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 000000000300000002000000
 --- !u!4 &1611434737
 Transform:
@@ -6682,6 +7617,7 @@ Transform:
   m_LocalPosition: {x: 31.0883884, y: -42.0284691, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: .440783709}
   m_Children:
+  - {fileID: 1266628818}
   - {fileID: 794633770}
   m_Father: {fileID: 0}
 --- !u!95 &1620859954
@@ -6791,7 +7727,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
-  spawnEmotions: 0300000001000000
+  showDebug: 0
+  spawnEmotions: 000000000300000002000000
 --- !u!4 &1646611351
 Transform:
   m_ObjectHideFlags: 0
@@ -6803,6 +7740,68 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &1673750357
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1673750359}
+  - 108: {fileID: 1673750358}
+  m_Layer: 0
+  m_Name: Point light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1673750358
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1673750357}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Type: 2
+  m_Color: {r: .996078432, g: 0, b: 0, a: 1}
+  m_Intensity: 1
+  m_Range: 17
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_Softness: 4
+    m_SoftnessFade: 1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
+--- !u!4 &1673750359
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1673750357}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.289994389, y: .201979503, z: 0}
+  m_LocalScale: {x: .285714298, y: .285714298, z: 2.26868629}
+  m_Children: []
+  m_Father: {fileID: 2125265587}
 --- !u!1 &1695540226
 GameObject:
   m_ObjectHideFlags: 0
@@ -6899,6 +7898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 000000000300000002000000
 --- !u!4 &1701393013
 Transform:
@@ -6920,11 +7920,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: c54cd740ac4dbbb4baf73d0424235027, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -10.906786
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c54cd740ac4dbbb4baf73d0424235027, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.0338195562
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c54cd740ac4dbbb4baf73d0424235027, type: 2}
       propertyPath: m_LocalPosition.z
@@ -7176,6 +8176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 000000000300000002000000
 --- !u!4 &1762225648
 Transform:
@@ -7237,21 +8238,83 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
       propertyPath: spawnEmotions.Array.data[1]
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
       propertyPath: spawnEmotions.Array.data[0]
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
       propertyPath: spawnEmotions.Array.data[2]
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
   m_RootGameObject: {fileID: 1487227767}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1767338754
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1767338755}
+  - 108: {fileID: 1767338756}
+  m_Layer: 0
+  m_Name: Point light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1767338755
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1767338754}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.294839859, y: .262839079, z: 0}
+  m_LocalScale: {x: .25, y: .25, z: 2.26868629}
+  m_Children: []
+  m_Father: {fileID: 1282108365}
+--- !u!108 &1767338756
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1767338754}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Type: 2
+  m_Color: {r: .996078432, g: 0, b: 0, a: 1}
+  m_Intensity: 1
+  m_Range: 20
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_Softness: 4
+    m_SoftnessFade: 1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
 --- !u!1 &1768494862
 GameObject:
   m_ObjectHideFlags: 0
@@ -7281,6 +8344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 000000000300000002000000
 --- !u!4 &1768494864
 Transform:
@@ -7569,6 +8633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 02000000
 --- !u!1 &1809844967
 GameObject:
@@ -7599,6 +8664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 000000000300000002000000
 --- !u!4 &1809844969
 Transform:
@@ -7611,6 +8677,68 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!1 &1850412647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1850412649}
+  - 108: {fileID: 1850412648}
+  m_Layer: 0
+  m_Name: Point light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &1850412648
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1850412647}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Type: 2
+  m_Color: {r: .996078432, g: 0, b: 0, a: 1}
+  m_Intensity: 1
+  m_Range: 15
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_Strength: 1
+    m_Bias: .0500000007
+    m_Softness: 4
+    m_SoftnessFade: 1
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_ActuallyLightmapped: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_ShadowSamples: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_IndirectIntensity: 1
+  m_AreaSize: {x: 1, y: 1}
+--- !u!4 &1850412649
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1850412647}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.249027252, y: .231524795, z: 0}
+  m_LocalScale: {x: .333333343, y: .333333343, z: 2.26868629}
+  m_Children: []
+  m_Father: {fileID: 445568887}
 --- !u!1 &1866444317
 GameObject:
   m_ObjectHideFlags: 0
@@ -7640,6 +8768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 000000000300000002000000
 --- !u!4 &1866444319
 Transform:
@@ -7744,6 +8873,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 4, y: 4, z: .440783709}
   m_Children:
+  - {fileID: 1392493883}
   - {fileID: 192752021}
   m_Father: {fileID: 0}
 --- !u!95 &1910672763
@@ -7833,7 +8963,7 @@ Transform:
   m_PrefabInternal: {fileID: 1742770881}
   m_GameObject: {fileID: 1955262570}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.906786, y: -.0338195562, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: .5, y: .5, z: 0}
   m_Children:
   - {fileID: 183318562}
@@ -7946,6 +9076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 0000000000000000
 --- !u!4 &1956990311
 Transform:
@@ -8115,6 +9246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 000000000300000002000000
 --- !u!4 &2009587016
 Transform:
@@ -8167,6 +9299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 02000000
 --- !u!1 &2029217868
 GameObject:
@@ -8260,6 +9393,7 @@ Transform:
   m_LocalPosition: {x: 48.7481918, y: -17.4981976, z: 0}
   m_LocalScale: {x: 2.5, y: 2.5, z: .440783709}
   m_Children:
+  - {fileID: 795453785}
   - {fileID: 845903695}
   m_Father: {fileID: 0}
 --- !u!95 &2029217874
@@ -8305,6 +9439,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 000000000300000002000000
 --- !u!4 &2035671606
 Transform:
@@ -8556,6 +9691,10 @@ Prefab:
       propertyPath: spawnEmotions.Array.data[1]
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
   m_RootGameObject: {fileID: 105836296}
@@ -8710,6 +9849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 000000000300000002000000
 --- !u!4 &2097964948
 Transform:
@@ -8751,6 +9891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 000000000300000002000000
 --- !u!4 &2109878010
 Transform:
@@ -8792,6 +9933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 000000000300000002000000
 --- !u!4 &2111210063
 Transform:
@@ -8817,10 +9959,18 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
       propertyPath: emotionsInfos.Array.data[2].clipsInfos.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
       propertyPath: emotionsInfos.Array.data[3].clipsInfos.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[1].clipsInfos.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[4].clipsInfos.Array.size
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
@@ -8894,7 +10044,7 @@ Prefab:
     - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
       propertyPath: emotionsInfos.Array.data[2].clipsInfos.Array.data[1].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 870f41b060d658645b4d314177cfbb39, type: 3}
+      objectReference: {fileID: 8300000, guid: f31a13bb3dc4136489203c91c73f3941, type: 3}
     - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
       propertyPath: emotionsInfos.Array.data[2].clipsInfos.Array.data[1].forceTempo
       value: .200000003
@@ -8962,6 +10112,130 @@ Prefab:
     - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
       propertyPath: emotionsInfos.Array.data[3].clipsInfos.Array.data[3].volumeStart
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[1].clipsInfos.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 870f41b060d658645b4d314177cfbb39, type: 3}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[1].clipsInfos.Array.data[2].forceTempo
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[1].clipsInfos.Array.data[2].volumeStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[1].clipsInfos.Array.data[3].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7ed13bd6dc893d34d98593d5ad53df93, type: 3}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[1].clipsInfos.Array.data[3].forceTempo
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[1].clipsInfos.Array.data[3].volumeStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[2].clipsInfos.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5d2d6fd538ac7c743b93f21a0f25034d, type: 3}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[4].clipsInfos.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 78ce90b9f5520ca4fb19d95e50fabc8d, type: 3}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[4].clipsInfos.Array.data[1].forceTempo
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[4].clipsInfos.Array.data[1].volumeStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[4].clipsInfos.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: b3e4c68f42f9b604b96165f0a4bc17c9, type: 3}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[4].clipsInfos.Array.data[2].forceTempo
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[4].clipsInfos.Array.data[2].volumeStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[4].clipsInfos.Array.data[0].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7576cc8ab586e7f439b161c1ece3a67f, type: 3}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[4].clipsInfos.Array.data[3].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: d1a793cba77a28a41b131b55216c6670, type: 3}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[4].clipsInfos.Array.data[3].forceTempo
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[4].clipsInfos.Array.data[3].volumeStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[2].clipsInfos.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: c52c4f52c37fce5418f6e1ad653761c0, type: 3}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[2].clipsInfos.Array.data[2].forceTempo
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[2].clipsInfos.Array.data[2].volumeStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[3].clipsInfos.Array.data[0].forceTempo
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[0].clipsInfos.Array.data[0].forceTempo
+      value: -.100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[1].clipsInfos.Array.data[0].forceTempo
+      value: -.0299999993
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[2].clipsInfos.Array.data[0].forceTempo
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[5].clipsInfos.Array.data[0].forceTempo
+      value: -.0599999987
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[0].clipsInfos.Array.data[0].stopTempo
+      value: -.119999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[1].clipsInfos.Array.data[0].stopTempo
+      value: -.0299999993
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[2].clipsInfos.Array.data[0].stopTempo
+      value: -.330000013
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[2].clipsInfos.Array.data[1].stopTempo
+      value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[2].clipsInfos.Array.data[2].stopTempo
+      value: -.340000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[5].clipsInfos.Array.data[0].stopTempo
+      value: -.180000007
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
@@ -9060,6 +10334,7 @@ Transform:
   m_LocalPosition: {x: -8.46245956, y: 46.7732544, z: 0}
   m_LocalScale: {x: 3.5, y: 3.5, z: .440783709}
   m_Children:
+  - {fileID: 1673750359}
   - {fileID: 301115881}
   m_Father: {fileID: 0}
 --- !u!95 &2125265588
@@ -9133,7 +10408,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
       propertyPath: spawnEmotions.Array.data[2]
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
@@ -9219,6 +10494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolName: GreenEmo
+  showDebug: 0
   spawnEmotions: 02000000
 --- !u!4 &2140497041
 Transform:

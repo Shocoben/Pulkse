@@ -6,7 +6,7 @@ SubstanceImporter:
   - serializedVersion: 10
     name: Bitmap2Material2
     prototypeName: Bitmap2Material2
-    shaderName: Bumped Specular
+    shaderName: Bumped Diffuse
     inputs:
     - name: $time
       value:
@@ -31,7 +31,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: MakeItTile_Method
       value:
-        scalar[0]: 0
+        scalar[0]: 1
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -332,14 +332,14 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: Highlights_Cancel
       value:
-        scalar[0]: .5
+        scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
         texture: {instanceID: 0}
     - name: Shadows_Cancel
       value:
-        scalar[0]: .5
+        scalar[0]: .819999993
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -469,14 +469,14 @@ SubstanceImporter:
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
-        texture: {fileID: 2800000, guid: 7d47ec6c267a62341866fadc70185e84, type: 3}
+        texture: {fileID: 2800000, guid: 699ff5d20f3988e4a96025c30355174a, type: 3}
     - name: Bitmap_Relief_optional
       value:
         scalar[0]: 0
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
-        texture: {instanceID: 0}
+        texture: {fileID: 2800000, guid: 699ff5d20f3988e4a96025c30355174a, type: 3}
     - name: Bitmap_Grunge_optional
       value:
         scalar[0]: 0
@@ -501,7 +501,7 @@ SubstanceImporter:
     materialInformation:
       serializedVersion: 5
       offset: {x: 0, y: 0}
-      scale: {x: 1, y: 1}
+      scale: {x: 4, y: 4}
       generateAllOutputs: 0
       animationUpdateRate: 0
     materialProperties:
@@ -512,14 +512,14 @@ SubstanceImporter:
             name: _MainTex
           second:
             texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
+            scale: {x: 4, y: 4}
             offset: {x: 0, y: 0}
         data:
           first:
             name: _BumpMap
           second:
             texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
+            scale: {x: 4, y: 4}
             offset: {x: 0, y: 0}
       floats:
         data:
@@ -530,7 +530,7 @@ SubstanceImporter:
         data:
           first:
             name: _Color
-          second: {r: 1, g: 1, b: 1, a: 1}
+          second: {r: 1, g: .838235259, b: .838235259, a: 1}
         data:
           first:
             name: _SpecColor
