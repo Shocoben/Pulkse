@@ -3851,7 +3851,7 @@ MonoBehaviour:
     material: {fileID: 2100000, guid: c27facdaa95d6fb46a930d0eb959da6c, type: 2}
     clipsInfos:
     - clip: {fileID: 8300000, guid: 3755ad18f18fb204a8eb84e01ec3d9bc, type: 3}
-      forceTempo: .200000003
+      forceTempo: -.100000001
       stopTempo: 0
       volumeStart: 1
     - clip: {fileID: 8300000, guid: ca457018a99edfa4ab2edfadd236e084, type: 3}
@@ -4792,7 +4792,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1193593585
 Transform:
   m_ObjectHideFlags: 0
@@ -6692,7 +6692,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: c54cd740ac4dbbb4baf73d0424235027, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c54cd740ac4dbbb4baf73d0424235027, type: 2}
@@ -8665,6 +8665,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
       propertyPath: emotionsInfos.Array.data[3].clipsInfos.Array.data[3].volumeStart
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
+      propertyPath: emotionsInfos.Array.data[3].clipsInfos.Array.data[0].forceTempo
+      value: -.100000001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
