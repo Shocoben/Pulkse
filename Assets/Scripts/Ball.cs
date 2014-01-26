@@ -7,6 +7,7 @@ public class BallEmosInfos
 {
 	public EmotionBall.Emotions emotion;
 	public GameObject goAnim;
+	public GameObject stayAnim;
 }
 
 public class Ball : LookAtObj 
@@ -35,7 +36,8 @@ public class Ball : LookAtObj
 
 	private EmotionBall.Emotions cEmo;
 	private float lastChangeEmo = -1000;
-	
+
+	private Animator transitionAnimation = null;
 
 	public List<EmotionBall.Emotions> emotionsZone
 	{
@@ -73,10 +75,10 @@ public class Ball : LookAtObj
 
 	public void changeEmotion(EmotionBall.Emotions emo)
 	{
-		_emotionsInfos[cEmo].goAnim.SetActive(false);
+		_emotionsInfos[cEmo].goAnim.gameObject.SetActive(false);
 		cEmo = emo;
 		lastChangeEmo = Time.time;
-		_emotionsInfos[cEmo].goAnim.SetActive(true);
+		_emotionsInfos[cEmo].goAnim.gameObject.SetActive(true);
 	}
 
 	public void removeZone(EmotionBall.Emotions emo)
@@ -166,6 +168,13 @@ public class Ball : LookAtObj
 		{
 			changeEmotion(EmotionBall.Emotions.white);
 		}
+
+		/*if (transitionAnimation != null && !transitionAnimation.animation.isPlaying)
+		{
+			transitionAnimation = null;
+			_emotionsInfos[cEmo].goAnim.gameObject.SetActive(true);
+		}*/
+
 	}
 	
 

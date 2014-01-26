@@ -4,15 +4,16 @@ using System.Collections;
 public class EmotionSpawn : MonoBehaviour {
 
 	public string poolName;
-	public EmotionBall.Emotions emotion;
+
+	public EmotionBall.Emotions[] spawnEmotions;
 
 	public void Spawn()
 	{
 		PoolableObject pGO = PoolManager.instance.getPoolableObject(poolName, false);
 		pGO.toActiveAndDesactive.transform.position = transform.position;
-		pGO.GetComponent<EmotionBall>().emotion = emotion;
+		int id = Mathf.FloorToInt(Random.Range(0, spawnEmotions.Length ));
+		Debug.Log(id + gameObject.name + spawnEmotions.Length);
+		pGO.GetComponent<EmotionBall>().emotion = spawnEmotions[id];;
 		pGO.Alive();
-
-
 	}
 }
