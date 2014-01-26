@@ -144,7 +144,7 @@ public class EmotionBall : LookAtObj
 		_scale = Mathf.Max(0, Mathf.Min(_scale, 1));
 		targetScale = basicScale * _scale;
 		transform.parent.localScale = targetScale;
-		if (_scale <= 0)
+		if (_scale <= 0.1f)
 		{
 			removeAudioLoop();
 		}
@@ -213,6 +213,8 @@ public class EmotionBall : LookAtObj
 		if (!_isPlaying)
 			return;
 		EmotionSoundConfig.Instance.removePlayingBall(this);
+		followBall.removeEmotion(this);
+
 		_isPlaying = false;
 		audioSource.loop = false;
 		_stopPlaying = true;
