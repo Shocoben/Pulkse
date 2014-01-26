@@ -257,6 +257,7 @@ public class EmotionBall : LookAtObj
 		EmotionSoundConfig.Instance.removePlayingBall(this);
 		followBall.removeEmotion(this);
 
+		followBall = null;
 		_isPlaying = false;
 		audioSource.loop = false;
 		_stopPlaying = true;
