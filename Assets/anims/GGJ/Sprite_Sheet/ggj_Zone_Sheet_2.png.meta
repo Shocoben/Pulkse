@@ -1,0 +1,234 @@
+fileFormatVersion: 2
+guid: 7605f4c569dce6b4dae973ff0975c9ba
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ggj_Zone_Sheet_2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 514
+        width: 432
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_Zone_Sheet_2_1
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 516
+        width: 427
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_Zone_Sheet_2_2
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 516
+        width: 427
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_Zone_Sheet_2_3
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 516
+        width: 426
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_Zone_Sheet_2_4
+      rect:
+        serializedVersion: 2
+        x: 1885
+        y: 516
+        width: 419
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_Zone_Sheet_2_5
+      rect:
+        serializedVersion: 2
+        x: 2350
+        y: 516
+        width: 419
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_Zone_Sheet_2_6
+      rect:
+        serializedVersion: 2
+        x: 2812
+        y: 516
+        width: 415
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_Zone_Sheet_2_7
+      rect:
+        serializedVersion: 2
+        x: 3271
+        y: 516
+        width: 414
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_Zone_Sheet_2_8
+      rect:
+        serializedVersion: 2
+        x: 3728
+        y: 518
+        width: 410
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_Zone_Sheet_2_9
+      rect:
+        serializedVersion: 2
+        x: 4182
+        y: 520
+        width: 410
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_Zone_Sheet_2_10
+      rect:
+        serializedVersion: 2
+        x: 4628
+        y: 520
+        width: 414
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_Zone_Sheet_2_11
+      rect:
+        serializedVersion: 2
+        x: 5075
+        y: 520
+        width: 413
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_Zone_Sheet_2_12
+      rect:
+        serializedVersion: 2
+        x: 5521
+        y: 520
+        width: 410
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_Zone_Sheet_2_13
+      rect:
+        serializedVersion: 2
+        x: 5960
+        y: 520
+        width: 414
+        height: 429
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_Zone_Sheet_2_14
+      rect:
+        serializedVersion: 2
+        x: 6402
+        y: 520
+        width: 411
+        height: 429
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_Zone_Sheet_2_15
+      rect:
+        serializedVersion: 2
+        x: 6826
+        y: 520
+        width: 410
+        height: 429
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_Zone_Sheet_2_16
+      rect:
+        serializedVersion: 2
+        x: 7268
+        y: 518
+        width: 413
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_Zone_Sheet_2_17
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 4
+        width: 414
+        height: 433
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_Zone_Sheet_2_18
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 3
+        width: 410
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_Zone_Sheet_2_19
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 3
+        width: 412
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: ggj_Zone_Sheet_2_20
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 0
+        width: 411
+        height: 440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
