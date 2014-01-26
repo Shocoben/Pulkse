@@ -34,6 +34,9 @@ public class EndZone : MonoBehaviour {
 	void OnTriggerEnter(Collider other)
 	{
 		Ball otherBall = other.GetComponent<Ball>();
+		if (otherBall == null)
+			return;
+
 		Dictionary<EmotionBall.Emotions, int> count = new Dictionary<EmotionBall.Emotions, int>();
 		bool good = true;
 		foreach(var Emo in endInfos)

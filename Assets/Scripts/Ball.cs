@@ -151,6 +151,19 @@ public class Ball : LookAtObj
         return getPlaneIntersection(ref myPlaneLookingCamera, screenPosition);
     }
 
+	public LayerMask bounceLayer;
+
+	public void bounce(GameObject other)
+	{
+		
+		Vector3 vToMe = other.transform.position - transform.position;
+		vToMe.Normalize();
+		RaycastHit hit;
+		if ( Physics.Raycast( transform.position, vToMe.normalized, out hit, 50, bounceLayer.value) )
+		{
+			transform.right += hit.normal * 3;
+		}
+	}
 
 	public float returnToWhiteTime = 1;
 	// Update is called once per frame
