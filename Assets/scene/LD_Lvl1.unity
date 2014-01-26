@@ -490,6 +490,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 0000000000000000
+  emotionBallMoving: 0
 --- !u!1 &129584269
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,6 +522,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 000000000300000002000000
+  emotionBallMoving: 0
 --- !u!4 &129584271
 Transform:
   m_ObjectHideFlags: 0
@@ -651,6 +653,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 0000000000000000
+  emotionBallMoving: 0
 --- !u!4 &192752021
 Transform:
   m_ObjectHideFlags: 0
@@ -704,6 +707,57 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 00000000
+  emotionBallMoving: 0
+--- !u!1 &223784302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 223784304}
+  - 212: {fileID: 223784303}
+  m_Layer: 0
+  m_Name: Panneau_Rouge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &223784303
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 223784302}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_Sprite: {fileID: 21300000, guid: c546c7976e1271747ad074c704e68e41, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!4 &223784304
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 223784302}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.6396523, y: 2.15046382, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1001 &251282517
 Prefab:
   m_ObjectHideFlags: 0
@@ -799,6 +853,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 000000000300000002000000
+  emotionBallMoving: 0
 --- !u!4 &265981492
 Transform:
   m_ObjectHideFlags: 0
@@ -841,6 +896,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 000000000300000002000000
+  emotionBallMoving: 0
 --- !u!4 &289509578
 Transform:
   m_ObjectHideFlags: 0
@@ -986,6 +1042,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 0000000000000000
+  emotionBallMoving: 0
 --- !u!1 &318400750
 GameObject:
   m_ObjectHideFlags: 0
@@ -1162,6 +1219,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 00000000
+  emotionBallMoving: 0
 --- !u!1 &374878769
 GameObject:
   m_ObjectHideFlags: 0
@@ -1409,7 +1467,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 405008090}
   m_LocalRotation: {x: -3.09086232e-08, y: -.707106829, z: .707106829, w: -3.09086232e-08}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
   m_LocalScale: {x: 14, y: 14, z: 14}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1444,6 +1502,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 00000000
+  emotionBallMoving: 0
 --- !u!4 &437934920
 Transform:
   m_ObjectHideFlags: 0
@@ -1894,6 +1953,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 02000000
+  emotionBallMoving: 0
 --- !u!4 &520547379
 Transform:
   m_ObjectHideFlags: 0
@@ -2054,6 +2114,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 02000000
+  emotionBallMoving: 0
 --- !u!4 &596729798
 Transform:
   m_ObjectHideFlags: 0
@@ -2107,6 +2168,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 00000000
+  emotionBallMoving: 0
 --- !u!1001 &636902945
 Prefab:
   m_ObjectHideFlags: 0
@@ -2186,6 +2248,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 000000000300000005000000
+  emotionBallMoving: 0
 --- !u!4 &649233518
 Transform:
   m_ObjectHideFlags: 0
@@ -2228,6 +2291,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 000000000400000002000000
+  emotionBallMoving: 0
 --- !u!4 &658974236
 Transform:
   m_ObjectHideFlags: 0
@@ -3115,6 +3179,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 00000000
+  emotionBallMoving: 0
 --- !u!1 &795453784
 GameObject:
   m_ObjectHideFlags: 0
@@ -3726,6 +3791,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 00000000
+  emotionBallMoving: 0
 --- !u!1 &846751272
 GameObject:
   m_ObjectHideFlags: 0
@@ -3958,6 +4024,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 00000000
+  emotionBallMoving: 0
 --- !u!4 &890250740
 Transform:
   m_ObjectHideFlags: 0
@@ -4000,6 +4067,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 050000000300000002000000
+  emotionBallMoving: 0
 --- !u!4 &899299828
 Transform:
   m_ObjectHideFlags: 0
@@ -4042,6 +4110,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 00000000
+  emotionBallMoving: 0
 --- !u!4 &911532625
 Transform:
   m_ObjectHideFlags: 0
@@ -4084,6 +4153,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 000000000300000002000000
+  emotionBallMoving: 0
 --- !u!4 &912715753
 Transform:
   m_ObjectHideFlags: 0
@@ -4436,6 +4506,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 00000000
+  emotionBallMoving: 0
 --- !u!4 &1001922329
 Transform:
   m_ObjectHideFlags: 0
@@ -5214,6 +5285,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 000000000300000002000000
+  emotionBallMoving: 0
 --- !u!4 &1129424182
 Transform:
   m_ObjectHideFlags: 0
@@ -5621,6 +5693,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 00000000
+  emotionBallMoving: 0
 --- !u!4 &1189471629
 Transform:
   m_ObjectHideFlags: 0
@@ -5794,6 +5867,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 00000000
+  emotionBallMoving: 0
 --- !u!4 &1238406837
 Transform:
   m_ObjectHideFlags: 0
@@ -5909,6 +5983,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 02000000
+  emotionBallMoving: 0
 --- !u!1 &1266628817
 GameObject:
   m_ObjectHideFlags: 0
@@ -6167,6 +6242,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 000000000300000002000000
+  emotionBallMoving: 0
 --- !u!4 &1293764523
 Transform:
   m_ObjectHideFlags: 0
@@ -6785,6 +6861,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 000000000300000002000000
+  emotionBallMoving: 0
 --- !u!4 &1385009022
 Transform:
   m_ObjectHideFlags: 0
@@ -7132,6 +7209,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 050000000100000000000000
+  emotionBallMoving: 0
 --- !u!4 &1426307151
 Transform:
   m_ObjectHideFlags: 0
@@ -7238,6 +7316,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 040000000500000001000000
+  emotionBallMoving: 0
 --- !u!4 &1487227769
 Transform:
   m_ObjectHideFlags: 0
@@ -7245,7 +7324,7 @@ Transform:
   m_PrefabInternal: {fileID: 1765149825}
   m_GameObject: {fileID: 1487227767}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.1958923, y: 2.42770624, z: 0}
+  m_LocalPosition: {x: -21.2486839, y: 2.42770624, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7280,6 +7359,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 000000000300000002000000
+  emotionBallMoving: 0
 --- !u!4 &1506313087
 Transform:
   m_ObjectHideFlags: 0
@@ -7430,6 +7510,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 000000000300000002000000
+  emotionBallMoving: 0
 --- !u!4 &1521432794
 Transform:
   m_ObjectHideFlags: 0
@@ -7483,6 +7564,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 00000000
+  emotionBallMoving: 0
 --- !u!1 &1611434735
 GameObject:
   m_ObjectHideFlags: 0
@@ -7514,6 +7596,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 000000000300000002000000
+  emotionBallMoving: 0
 --- !u!4 &1611434737
 Transform:
   m_ObjectHideFlags: 0
@@ -7729,6 +7812,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 000000000300000002000000
+  emotionBallMoving: 0
 --- !u!4 &1646611351
 Transform:
   m_ObjectHideFlags: 0
@@ -7900,6 +7984,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 000000000300000002000000
+  emotionBallMoving: 0
 --- !u!4 &1701393013
 Transform:
   m_ObjectHideFlags: 0
@@ -8178,6 +8263,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 000000000300000002000000
+  emotionBallMoving: 0
 --- !u!4 &1762225648
 Transform:
   m_ObjectHideFlags: 0
@@ -8202,7 +8288,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -17.1958923
+      value: -21.2486839
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3810dafb90fa06b42acdcdfb828f1bc2, type: 2}
       propertyPath: m_LocalPosition.y
@@ -8346,6 +8432,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 000000000300000002000000
+  emotionBallMoving: 0
 --- !u!4 &1768494864
 Transform:
   m_ObjectHideFlags: 0
@@ -8635,6 +8722,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 02000000
+  emotionBallMoving: 0
 --- !u!1 &1809844967
 GameObject:
   m_ObjectHideFlags: 0
@@ -8666,6 +8754,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 000000000300000002000000
+  emotionBallMoving: 0
 --- !u!4 &1809844969
 Transform:
   m_ObjectHideFlags: 0
@@ -8770,6 +8859,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 000000000300000002000000
+  emotionBallMoving: 0
 --- !u!4 &1866444319
 Transform:
   m_ObjectHideFlags: 0
@@ -9078,6 +9168,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 0000000000000000
+  emotionBallMoving: 0
 --- !u!4 &1956990311
 Transform:
   m_ObjectHideFlags: 0
@@ -9248,6 +9339,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 000000000300000002000000
+  emotionBallMoving: 0
 --- !u!4 &2009587016
 Transform:
   m_ObjectHideFlags: 0
@@ -9301,6 +9393,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 02000000
+  emotionBallMoving: 0
 --- !u!1 &2029217868
 GameObject:
   m_ObjectHideFlags: 0
@@ -9441,6 +9534,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 000000000300000002000000
+  emotionBallMoving: 0
 --- !u!4 &2035671606
 Transform:
   m_ObjectHideFlags: 0
@@ -9851,6 +9945,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 000000000300000002000000
+  emotionBallMoving: 0
 --- !u!4 &2097964948
 Transform:
   m_ObjectHideFlags: 0
@@ -9893,6 +9988,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 000000000300000002000000
+  emotionBallMoving: 0
 --- !u!4 &2109878010
 Transform:
   m_ObjectHideFlags: 0
@@ -9935,6 +10031,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 000000000300000002000000
+  emotionBallMoving: 0
 --- !u!4 &2111210063
 Transform:
   m_ObjectHideFlags: 0
@@ -10496,6 +10593,7 @@ MonoBehaviour:
   poolName: GreenEmo
   showDebug: 0
   spawnEmotions: 02000000
+  emotionBallMoving: 0
 --- !u!4 &2140497041
 Transform:
   m_ObjectHideFlags: 0
