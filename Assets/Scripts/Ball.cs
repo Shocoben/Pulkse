@@ -9,7 +9,8 @@ public class BallEmosInfos
 	public GameObject goAnim;
 }
 
-public class Ball : LookAtObj {
+public class Ball : LookAtObj 
+{
 
     private static List<Ball> _instances = new List<Ball>();
     private static Ball _selectedBall = null;
@@ -58,6 +59,11 @@ public class Ball : LookAtObj {
 
 	public void addZone(EmotionBall.Emotions emo)
 	{
+		for (int i = 0; i < _ballsByEmotion[emo].Count; ++i)
+		{
+			_ballsByEmotion[emo][i].resetScale();
+		}
+
 		if (emo != cEmo)
 		{
 			changeEmotion(emo);

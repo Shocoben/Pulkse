@@ -41,36 +41,52 @@ MonoBehaviour:
   destroyOnLoadLevel: 1
   emotionsInfos:
   - emotionName: 0
-    clip: {fileID: 8300000, guid: 95d8d7975b18cc44bb194b6e9319bd5d, type: 3}
-    forceTempo: 1
-    stopTempo: .5
     material: {fileID: 2100000, guid: 78db0ca6a0269f940b86987d86dfcd29, type: 2}
+    clipsInfos:
+    - clip: {fileID: 8300000, guid: 734a40f25986fa04880d779006ee9dfc, type: 3}
+      forceTempo: .200000003
+      stopTempo: 0
+      volumeStart: 1
   - emotionName: 1
-    clip: {fileID: 8300000, guid: 870f41b060d658645b4d314177cfbb39, type: 3}
-    forceTempo: 1
-    stopTempo: .5
     material: {fileID: 2100000, guid: a9a10b5c59f48aa42add415819891e60, type: 2}
+    clipsInfos:
+    - clip: {fileID: 8300000, guid: 4fb2d2d4dd4a6064b8199b84facba47e, type: 3}
+      forceTempo: .200000003
+      stopTempo: 0
+      volumeStart: 1
+    - clip: {fileID: 8300000, guid: a73cd676167420b4183bfe76f0573559, type: 3}
+      forceTempo: .200000003
+      stopTempo: 0
+      volumeStart: 1
   - emotionName: 2
-    clip: {fileID: 8300000, guid: 292f2374dcaf26349acad86f5f5ecf83, type: 3}
-    forceTempo: 1
-    stopTempo: .5
     material: {fileID: 2100000, guid: a1fa38c312abb554db663bb177c7d48b, type: 2}
+    clipsInfos:
+    - clip: {fileID: 8300000, guid: 870f41b060d658645b4d314177cfbb39, type: 3}
+      forceTempo: .200000003
+      stopTempo: 0
+      volumeStart: 1
   - emotionName: 3
-    clip: {fileID: 8300000, guid: d7415a54dbcc0754e85d9c2340b192ed, type: 3}
-    forceTempo: 1
-    stopTempo: .5
     material: {fileID: 2100000, guid: c27facdaa95d6fb46a930d0eb959da6c, type: 2}
+    clipsInfos:
+    - clip: {fileID: 8300000, guid: 3755ad18f18fb204a8eb84e01ec3d9bc, type: 3}
+      forceTempo: .200000003
+      stopTempo: 0
+      volumeStart: 1
   - emotionName: 4
-    clip: {fileID: 8300000, guid: 6ba6995931033c348ad9d60647764ff4, type: 3}
-    forceTempo: 1
-    stopTempo: .5
     material: {fileID: 2100000, guid: 8663c5ca56c961444abd7a4310e9eb0b, type: 2}
+    clipsInfos:
+    - clip: {fileID: 8300000, guid: 9a3f8102645d13b4a80ca9f584fb8ddb, type: 3}
+      forceTempo: .200000003
+      stopTempo: 0
+      volumeStart: 1
   - emotionName: 5
-    clip: {fileID: 8300000, guid: f1a7125703e23a14cba28a5c2723b111, type: 3}
-    forceTempo: .200000003
-    stopTempo: .5
     material: {fileID: 2100000, guid: 65714e0b77fc3e34a811a3fb4be2a314, type: 2}
-  generalTempo: 1
+    clipsInfos:
+    - clip: {fileID: 8300000, guid: 4559a1b42dd03954eb1899385d27f7aa, type: 3}
+      forceTempo: .200000003
+      stopTempo: 0
+      volumeStart: 1
+  generalTempo: 5
   generalAudioClipTempo: {fileID: 0}
   spawnPointsTag: SpawnPoint
 --- !u!1001 &100100000

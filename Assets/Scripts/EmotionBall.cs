@@ -126,6 +126,11 @@ public class EmotionBall : LookAtObj
 
 	public virtual void addScale()
 	{
+		applyScale();
+	}
+
+	public virtual void resetScale()
+	{
 		_scale = 1;
 		applyScale();
 	}
