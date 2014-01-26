@@ -42,10 +42,18 @@ public class EmotionBall : LookAtObj
 	private bool _launchedPlay = false;
 	public Renderer graph;
 
+	private ClipInfo _cClipInfo;
+
+	public ClipInfo getCClipInfo()
+	{
+		return _cClipInfo;
+	}
+
 	public bool launchedPlay()
 	{
 		return _launchedPlay;
 	}
+
 	public bool isPlaying()
 	{
 		return _isPlaying;
@@ -59,11 +67,10 @@ public class EmotionBall : LookAtObj
 	public override void Alive ()
 	{
 		base.Alive();
-		EmotionInfos infos = EmotionSoundConfig.Instance.emoDictionary[emotion];
-		audioClip = infos.clip;
-		_stopPlayingTempo = infos.stopTempo;
-		_personalTempoDuration = (infos.forceTempo > 0)? infos.forceTempo : infos.clip.length;
-
+		followBall = null;
+		_isPlaying = false;
+		_stopPlaying = false;
+		_scale = 1;
 		transform.parent.localScale = basicScale;
 		targetScale = basicScale;
 		setupForEmotion();
@@ -119,7 +126,7 @@ public class EmotionBall : LookAtObj
 
 	public virtual void addScale()
 	{
-		_scale += pulseSpeed;
+		_scale = 1;
 		applyScale();
 	}
 
@@ -160,23 +167,42 @@ public class EmotionBall : LookAtObj
 
 			EmotionSoundConfig.Instance.addPlayingBall( this );
 			_launchedPlay = false;
-
 		}
 	}
 
-	public void playAudioLoop()
+	public void setupAudioLoop(ClipInfo info)
 	{
-		audioSource.clip = audioClip;
+		_cClipInfo = info;
+		audioSource.clip = info.clip;
+	}
+
+	public void playAudioLoop( float time)
+	{
+
+		if (_isPlaying)
+			return;
+
 		audioSource.loop = true;
-		audioSource.Play();
+		audioSource.time = time;
+		audioSource.volume =  _cClipInfo.volumeStart;
 		EmotionSoundConfig.Instance.emoDictionary[emotion].setPlaying(true);
 
+		_personalTempoDuration = _cClipInfo.getTempoDuration();
+		_stopPlayingTempo = _cClipInfo.stopTempo;
+
 		_lastPersonnalTempoPlay = Time.time;
+
 		_isPlaying = true;
+		audioSource.Play();
 	}
+
+
+
 
 	public void removeAudioLoop()
 	{
+		if (!_isPlaying)
+			return;
 		EmotionSoundConfig.Instance.removePlayingBall(this);
 		_isPlaying = false;
 		audioSource.loop = false;

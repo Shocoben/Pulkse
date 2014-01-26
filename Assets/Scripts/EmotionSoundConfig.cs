@@ -3,14 +3,44 @@ using System.Collections;
 using System.Collections.Generic;
 
 [System.Serializable]
-public class EmotionInfos
+public class ClipInfo
 {
-	public EmotionBall.Emotions emotionName;
 	public AudioClip clip;
 	public float forceTempo = -1;
 	public float stopTempo = 0.5f;
+	public float volumeStart = 1;
+
+	private List<EmotionBall> _playingClip = new List<EmotionBall>();
+	public void addPlayingClip(EmotionBall ball)
+	{
+		_playingClip.Add(ball);
+	}
+
+	public void removePlayingClip(EmotionBall ball)
+	{
+		_playingClip.Remove(ball);
+	}
+
+	public List<EmotionBall> getPlayingList()
+	{
+		return _playingClip;
+	}
+
+	public float getTempoDuration()
+	{
+		return (forceTempo <= 0)? clip.length : forceTempo;
+	}
+}
+
+[System.Serializable]
+public class EmotionInfos
+{
+	public EmotionBall.Emotions emotionName;
+
 	public Material material;
 
+	
+	public ClipInfo[] clipsInfos;
 	private bool _isPlaying = false;
 	
 	public bool isPlaying()
@@ -22,6 +52,21 @@ public class EmotionInfos
 	{
 		_isPlaying = nBool;
 	}
+
+	private int cID = 0;
+
+	public ClipInfo getCurrentClipInfo()
+	{
+		ClipInfo clip = clipsInfos[cID];
+		cID ++;
+		if (cID >= clipsInfos.Length)
+		{
+			cID = 0;
+		}
+		return clip;
+	}
+
+
 }
 
 public class EmotionSoundConfig : Singleton<EmotionSoundConfig> {
@@ -44,6 +89,7 @@ public class EmotionSoundConfig : Singleton<EmotionSoundConfig> {
 
 	private List<EmotionSpawn> _spawnPoints = new List<EmotionSpawn>();
 	public string spawnPointsTag = "SpawnPoint";
+
 	protected override void Awake ()
 	{
 		base.Awake ();
@@ -56,11 +102,11 @@ public class EmotionSoundConfig : Singleton<EmotionSoundConfig> {
 				if( !emoDictionary.ContainsKey(emo) )
 				{
 					emoDictionary.Add(emo, emotionsInfos[i]);
-					_ballPlayingByEmotions.Add(emo, new List<EmotionBall>());
+					_ballPlayingByEmotions.Add( emo, new List<EmotionBall>() );
 				}
 				else
 				{
-					Debug.LogError("SoundConfigutator : there is two configurations for the same emotion " + emo.ToString());
+					Debug.LogError( "SoundConfigutator : there is two configurations for the same emotion " + emo.ToString() );
 				}
 			}
 		}
@@ -87,16 +133,25 @@ public class EmotionSoundConfig : Singleton<EmotionSoundConfig> {
 		if (ball.isPlaying())
 			return;
 
+		ClipInfo clipInfo = emoDictionary[ball.emotion].getCurrentClipInfo();
+
 		if (_playingBallCount <= 0)
 		{
 			_lastTempoPlay = Time.time;
-			_tempoDuration = (emoDictionary[ball.emotion].forceTempo > 0)?emoDictionary[ball.emotion].forceTempo : emoDictionary[ball.emotion].clip.length;
+			_tempoDuration = clipInfo.getTempoDuration();
 			_isFollowingTempo = true;
-			ball.playAudioLoop();
+			ball.setupAudioLoop(clipInfo);
+			ball.playAudioLoop(0);
+			clipInfo.addPlayingClip(ball);
 		}
 		else
 		{
-			addToQueue(ball);
+			if (clipInfo.getPlayingList().Count <= 0)
+			{
+				addToQueue(ball);
+			}
+			clipInfo.addPlayingClip(ball);
+			ball.setupAudioLoop(clipInfo);
 		}
 
 		_playingBallCount++;
@@ -108,14 +163,22 @@ public class EmotionSoundConfig : Singleton<EmotionSoundConfig> {
 		if (!ball.isPlaying())
 			return;
 
-
 		_ballPlayingByEmotions[ball.emotion].Remove(ball);
+
+		ClipInfo infos = ball.getCClipInfo();
+		infos.removePlayingClip(ball);
 		_playingBallCount--;
+
+		if (infos.getPlayingList().Count > 0)
+			infos.getPlayingList()[0].playAudioLoop(ball.audioSource.time);
 
 		if (_playingBallCount <= 0)
 		{
 			_isFollowingTempo = false;
 		}
+	
+			
+
 
 		spawnNewBall();
 
@@ -150,11 +213,14 @@ public class EmotionSoundConfig : Singleton<EmotionSoundConfig> {
 	{
 		if (_isFollowingTempo && _lastTempoPlay + _tempoDuration <= Time.time)
 		{
-			for (int i = 0; i < queueToPlay.Count; ++i)
+			EmotionBall[] copyBallsQueue = new EmotionBall[queueToPlay.Count];
+			queueToPlay.CopyTo(copyBallsQueue);
+
+			for (int i = 0; i < copyBallsQueue.Length; ++i)
 			{
-				EmotionBall.Emotions cEmotion = queueToPlay[i].emotion;
-				queueToPlay[i].playAudioLoop();
-				queueToPlay.Remove(queueToPlay[i]);
+				EmotionBall.Emotions cEmotion = copyBallsQueue[i].emotion;
+				copyBallsQueue[i].playAudioLoop(0);
+				queueToPlay.Remove( copyBallsQueue[i] );
 			}
 			_lastTempoPlay = Time.time;
 		}
