@@ -86,7 +86,7 @@ MonoBehaviour:
       forceTempo: .200000003
       stopTempo: 0
       volumeStart: 1
-  generalTempo: 1
+  generalTempo: 5
   generalAudioClipTempo: {fileID: 0}
   spawnPointsTag: SpawnPoint
 --- !u!1001 &100100000
