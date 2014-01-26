@@ -199,10 +199,7 @@ public class EmotionBall : LookAtObj
 			EmotionSoundConfig.Instance.addPlayingBall( this );
 			_launchedPlay = false;
 		}
-		if (move)
-		{
-			Debug.Log("othe.tag " + other.tag + " name " + other.name + "bounce" + bounceOthers.Contains(other.tag));
-  		}
+
 		if (move && bounceOthers.Contains(other.tag))
 		{
 			bounce(other.gameObject);
