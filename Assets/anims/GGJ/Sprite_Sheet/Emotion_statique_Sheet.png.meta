@@ -1,0 +1,279 @@
+fileFormatVersion: 2
+guid: be8bcaf3f0372b94ba92fa779d6da277
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Emotion_statique_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 370
+        width: 174
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Emotion_statique_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 370
+        width: 173
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Emotion_statique_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 370
+        width: 172
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Emotion_statique_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 370
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Emotion_statique_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 370
+        width: 169
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Emotion_statique_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 368
+        width: 169
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Emotion_statique_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1796
+        y: 370
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Emotion_statique_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 370
+        width: 169
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Emotion_statique_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2377
+        y: 370
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Emotion_statique_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2667
+        y: 370
+        width: 172
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Emotion_statique_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2953
+        y: 370
+        width: 169
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Emotion_statique_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3250
+        y: 370
+        width: 169
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Emotion_statique_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 3560
+        y: 370
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Emotion_statique_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 3862
+        y: 370
+        width: 172
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Emotion_statique_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 4157
+        y: 370
+        width: 172
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Emotion_statique_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 4469
+        y: 370
+        width: 172
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Emotion_statique_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 82
+        width: 171
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Emotion_statique_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 80
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Emotion_statique_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 80
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Emotion_statique_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 80
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Emotion_statique_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 80
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Emotion_statique_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 80
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Emotion_statique_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 80
+        width: 173
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Emotion_statique_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 80
+        width: 171
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Emotion_statique_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 2374
+        y: 80
+        width: 174
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: Emotion_statique_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 2665
+        y: 80
+        width: 174
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 

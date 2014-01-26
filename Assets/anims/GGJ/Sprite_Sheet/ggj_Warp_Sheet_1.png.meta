@@ -1,0 +1,126 @@
+fileFormatVersion: 2
+guid: 9cca197387e19ea4199362ecfc41cb0b
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ggj_Warp_Sheet_1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 563
+        height: 582
+      alignment: 9
+      pivot: {x: .479999989, y: .5}
+    - name: ggj_Warp_Sheet_1_1
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 15
+        width: 573
+        height: 570
+      alignment: 9
+      pivot: {x: .49000001, y: .49000001}
+    - name: ggj_Warp_Sheet_1_2
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 5
+        width: 589
+        height: 580
+      alignment: 9
+      pivot: {x: .50999999, y: .5}
+    - name: ggj_Warp_Sheet_1_3
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 0
+        width: 613
+        height: 585
+      alignment: 9
+      pivot: {x: .5, y: .5}
+    - name: ggj_Warp_Sheet_1_4
+      rect:
+        serializedVersion: 2
+        x: 2482
+        y: 18
+        width: 619
+        height: 590
+      alignment: 9
+      pivot: {x: .479999989, y: .479999989}
+    - name: ggj_Warp_Sheet_1_5
+      rect:
+        serializedVersion: 2
+        x: 3130
+        y: 1
+        width: 566
+        height: 584
+      alignment: 9
+      pivot: {x: .49000001, y: .50999999}
+    - name: ggj_Warp_Sheet_1_6
+      rect:
+        serializedVersion: 2
+        x: 3759
+        y: 18
+        width: 567
+        height: 567
+      alignment: 9
+      pivot: {x: .49000001, y: .5}
+    - name: ggj_Warp_Sheet_1_7
+      rect:
+        serializedVersion: 2
+        x: 4357
+        y: 18
+        width: 603
+        height: 570
+      alignment: 9
+      pivot: {x: .49000001, y: .49000001}
+    - name: ggj_Warp_Sheet_1_8
+      rect:
+        serializedVersion: 2
+        x: 4980
+        y: 0
+        width: 577
+        height: 590
+      alignment: 9
+      pivot: {x: .479999989, y: .50999999}
+  spritePackingTag: 
+  userData: 
