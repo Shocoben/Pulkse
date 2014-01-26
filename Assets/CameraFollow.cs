@@ -5,7 +5,7 @@ public class CameraFollow : LookAtObj {
 
 	public Transform target;
 	public Vector3 _direction;
-	public float speed = 5;
+	public float speed = 15;
 
 	// Use this for initialization
 	void Start () {
