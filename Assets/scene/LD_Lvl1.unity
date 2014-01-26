@@ -2975,23 +2975,51 @@ MonoBehaviour:
   emotionsInfos:
   - emotionName: 0
     material: {fileID: 2100000, guid: 78db0ca6a0269f940b86987d86dfcd29, type: 2}
-    clipsInfos: []
+    clipsInfos:
+    - clip: {fileID: 8300000, guid: 734a40f25986fa04880d779006ee9dfc, type: 3}
+      forceTempo: .200000003
+      stopTempo: 0
+      volumeStart: 1
   - emotionName: 1
     material: {fileID: 2100000, guid: a9a10b5c59f48aa42add415819891e60, type: 2}
-    clipsInfos: []
+    clipsInfos:
+    - clip: {fileID: 8300000, guid: 4fb2d2d4dd4a6064b8199b84facba47e, type: 3}
+      forceTempo: .200000003
+      stopTempo: 0
+      volumeStart: 1
+    - clip: {fileID: 8300000, guid: a73cd676167420b4183bfe76f0573559, type: 3}
+      forceTempo: .200000003
+      stopTempo: 0
+      volumeStart: 1
   - emotionName: 2
     material: {fileID: 2100000, guid: a1fa38c312abb554db663bb177c7d48b, type: 2}
-    clipsInfos: []
+    clipsInfos:
+    - clip: {fileID: 8300000, guid: 870f41b060d658645b4d314177cfbb39, type: 3}
+      forceTempo: .200000003
+      stopTempo: 0
+      volumeStart: 1
   - emotionName: 3
     material: {fileID: 2100000, guid: c27facdaa95d6fb46a930d0eb959da6c, type: 2}
-    clipsInfos: []
+    clipsInfos:
+    - clip: {fileID: 8300000, guid: 3755ad18f18fb204a8eb84e01ec3d9bc, type: 3}
+      forceTempo: .200000003
+      stopTempo: 0
+      volumeStart: 1
   - emotionName: 4
     material: {fileID: 2100000, guid: 8663c5ca56c961444abd7a4310e9eb0b, type: 2}
-    clipsInfos: []
+    clipsInfos:
+    - clip: {fileID: 8300000, guid: 9a3f8102645d13b4a80ca9f584fb8ddb, type: 3}
+      forceTempo: .200000003
+      stopTempo: 0
+      volumeStart: 1
   - emotionName: 5
     material: {fileID: 2100000, guid: 65714e0b77fc3e34a811a3fb4be2a314, type: 2}
-    clipsInfos: []
-  generalTempo: 5
+    clipsInfos:
+    - clip: {fileID: 8300000, guid: 4559a1b42dd03954eb1899385d27f7aa, type: 3}
+      forceTempo: .200000003
+      stopTempo: 0
+      volumeStart: 1
+  generalTempo: 1
   generalAudioClipTempo: {fileID: 0}
   spawnPointsTag: SpawnPoint
 --- !u!4 &1042931999
@@ -5183,7 +5211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2068a8c46237194ab4494bce1d88b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emotion: 3
+  emotion: 0
 --- !u!212 &1910672761
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5869,7 +5897,7 @@ Prefab:
       objectReference: {fileID: 8300000, guid: 4559a1b42dd03954eb1899385d27f7aa, type: 3}
     - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
       propertyPath: generalTempo
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 5655ba043b9db56458ae1992a0c43e3e, type: 2}
       propertyPath: emotionsInfos.Array.data[0].clip

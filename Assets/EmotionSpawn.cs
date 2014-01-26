@@ -12,7 +12,7 @@ public class EmotionSpawn : MonoBehaviour {
 		PoolableObject pGO = PoolManager.instance.getPoolableObject(poolName, false);
 		pGO.toActiveAndDesactive.transform.position = transform.position;
 		int id = Mathf.FloorToInt(Random.Range(0, spawnEmotions.Length ));
-		Debug.Log(id + gameObject.name + spawnEmotions.Length);
+
 		pGO.GetComponent<EmotionBall>().emotion = spawnEmotions[id];;
 		pGO.Alive();
 	}

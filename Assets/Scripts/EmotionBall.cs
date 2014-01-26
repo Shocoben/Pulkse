@@ -120,8 +120,12 @@ public class EmotionBall : LookAtObj
 
 	public virtual void diminutionScale()
 	{
-		_scale -= pulseSpeed;
-		applyScale();
+		if (!followBall.emotionsZone.Contains(emotion))
+		{
+			_scale -= pulseSpeed;
+			applyScale();
+		}
+
 	}
 
 	public virtual void addScale()
